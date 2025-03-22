@@ -1,7 +1,7 @@
 export const items = [
     {
         id: 1,
-        image: "/services/img1.jpg",
+        image: "/services/img1_enhanced.jpg",
         title: "Hemato Oncology",
         url: "/",
         content: [
@@ -77,7 +77,7 @@ export const items = [
     },
     {
         id: 2,
-        image: "/services/img2.jpg",
+        image: "/services/img2_enhanced.jpg",
         title: "Gynecologic Oncology",
         url: "/",
         content: [
@@ -153,7 +153,7 @@ export const items = [
     },
     {
         id: 3,
-        image: "/services/img3.jpg",
+        image: "/services/img3_enhanced.jpg",
         title: "Geriatric Oncology",
         url: "/",
         content: [
@@ -221,7 +221,7 @@ export const items = [
     },
     {
         id: 4,
-        image: "/services/img4.jpg",
+        image: "/services/img4_enhanced.jpg",
         title: "Neuro Oncology",
         url: "/",
         content: [
@@ -299,7 +299,7 @@ export const items = [
     },
     {
         id: 5,
-        image: "/services/img5.jpg",
+        image: "/services/img5_enhanced.jpg",
         title: "Radiation Oncology",
         url: "/",
         content: [
@@ -374,7 +374,7 @@ export const items = [
     },
     {
         id: 6,
-        image: "/services/img6.jpg",
+        image: "/services/img6_enhanced.jpg",
         title: "Surgical Oncology",
         url: "/",
         content: [
@@ -456,7 +456,7 @@ export const items = [
     },
     {
         id: 7,
-        image: "/services/img7.jpg",
+        image: "/services/img7_enhanced.jpg",
         title: "Pediatric Oncology",
         url: "/",
         content: [
@@ -540,7 +540,7 @@ export const items = [
     },
     {
         id: 8,
-        image: "/services/img8.jpg",
+        image: "/services/img8_enhanced.jpg",
         title: "Medical Oncology",
         url: "/",
         content: [

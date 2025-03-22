@@ -38,12 +38,12 @@ const OncologyServices = () => {
     };
 
     return (
-        <div className="mt-10 px-4 relative">
-            <h1 className="text-center font-semibold text-3xl md:text-4xl text-gray-800">
+        <div className="px-4 relative bg-[#84888933]">
+            <h1 className="text-center font-semibold text-3xl md:text-4xl text-gray-800 py-5">
                 We Deliver High-Quality Oncology Services
             </h1>
 
-            <div className="mt-8 max-w-6xl mx-auto relative">
+            <div className="max-w-6xl mx-auto relative">
                 <Slider {...settings}>
                     {items.map((item) => (
                         <div key={item.id} className="px-2">
@@ -69,9 +69,9 @@ const OncologyServices = () => {
 
                                 <div className="p-4">
                                     <Link
-                                        href={item.url}
+                                        href={`services/${item.id}`}
                                         className="px-4 py-2 bg-[#ef1a76] text-white text-lg rounded-lg block text-center transition-all 
-               border-2 border-transparent hover:border-[#ef1a76] hover:text-black hover:bg-white"
+                                           border-2 border-transparent hover:border-[#ef1a76] hover:text-black hover:bg-white"
                                     >
                                         Know More
                                     </Link>
@@ -91,7 +91,7 @@ const CustomNextArrow = (props) => {
     const { onClick } = props;
     return (
         <button
-            className="absolute top-1/2 right-2 md:right-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full shadow-md hover:bg-gray-600 z-10"
+            className="absolute top-1/2 right-2 cursor-pointer md:right-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full shadow-md hover:bg-gray-600 z-10"
             onClick={onClick}
         >
             <GrNext size={24} />
@@ -103,7 +103,7 @@ const CustomPrevArrow = (props) => {
     const { onClick } = props;
     return (
         <button
-            className="absolute top-1/2 left-2 md:left-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full shadow-md hover:bg-gray-600 z-10"
+            className="absolute top-1/2 left-2 cursor-pointer md:left-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full shadow-md hover:bg-gray-600 z-10"
             onClick={onClick}
         >
             <GrPrevious size={24} />

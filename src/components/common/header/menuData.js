@@ -14,7 +14,7 @@ const menuData = [
     {
         id: 3,
         title: "Treatments",
-        path: "/",
+        path: "/services",
         newTab: false
     },
     {
@@ -24,49 +24,49 @@ const menuData = [
         submenu: [
             {
                 id: 41,
-                title: "Lung Cancer Specialist Doctor in Delhi",
+                title: "Lung Cancer",
                 path: "",
                 newTab: false
             },
             {
                 id: 42,
-                title: "Cervical Cancer Specialist Doctor in Delhi",
+                title: "Cervical Cancer",
                 path: "",
                 newTab: false
             },
             {
                 id: 43,
-                title: "Prostate Cancer Specialist Doctor in Delhi",
+                title: "Prostate Cancer",
                 path: "",
                 newTab: false
             },
             {
                 id: 44,
-                title: "Mouth and Oral Cancer Specialist Doctor in Delhi",
+                title: "Mouth and Oral Cancer",
                 path: "",
                 newTab: false
             },
             {
                 id: 45,
-                title: "Colorectal Cancer Specialist Doctor in Delhi",
+                title: "Colorectal Cancer",
                 path: "",
                 newTab: false
             },
             {
                 id: 46,
-                title: "Blood Cancer Specialist Doctor in Delhi",
+                title: "Blood Cancer",
                 path: "",
                 newTab: false
             },
             {
                 id: 47,
-                title: "Brain Cancer Specialist Doctor in Delhi",
+                title: "Brain Cancer",
                 path: "",
                 newTab: false
             },
             {
                 id: 48,
-                title: "Bone Cancer Specialist Doctor in Delhi",
+                title: "Bone Cancer",
                 path: "",
                 newTab: false
             },

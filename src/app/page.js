@@ -5,9 +5,12 @@ import OncologyServices from "@/components/homepage/OncologyServices";
 export default function Home() {
   return (
     <div>
-      <Banner />
-      <About />
-      <OncologyServices />
+    
+        <Banner />
+        <About />
+        <OncologyServices />
+        {/* <BackgroundPaths /> */}
+ 
     </div>
   );
 }
