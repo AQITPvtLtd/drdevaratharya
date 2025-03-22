@@ -6,7 +6,7 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 const Explore = () => {
     return (
         <div className='max-w-full mx-20 grid lg:grid-cols-12 mt-20'>
-            <div className='md:col-span-6 col-end-4'>
+            <div className='md:col-span-6 col-span-4'>
                 <span className='bg-[#f8fcf4] p-2 rounded-md'>What We Do</span>
                 <p className='mt-2 font-semibold text-5xl p-2'>Explore Oncology
                     Departments</p>
@@ -29,7 +29,7 @@ const Explore = () => {
                 </div>
             </div>
 
-            <div className='md:col-span-6 col-end-4'>
+            <div className='md:col-span-6 col-span-4'>
                 <Image className='rounded-md' src='/explore/bg03-600x500.jpg' width={1000} height={1000} style={{ maxWidth: '600px', height: 'auto' }} alt='' />
             </div>
         </div>

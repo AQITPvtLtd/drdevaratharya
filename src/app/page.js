@@ -1,4 +1,5 @@
 import About from "@/components/homepage/About";
+import Appointment from "@/components/homepage/Appointment";
 import Banner from "@/components/homepage/Banner";
 import Explore from "@/components/homepage/Explore";
 import OncologyServices from "@/components/homepage/OncologyServices";
@@ -12,6 +13,7 @@ export default function Home() {
       <OncologyServices />
       {/* <BackgroundPaths /> */}
       <Explore />
+      <Appointment />
     </div>
   );
 }
