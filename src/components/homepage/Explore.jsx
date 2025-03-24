@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image';
 import { IoCheckmarkCircle } from "react-icons/io5";
 import { MdOutlineArrowOutward } from "react-icons/md";
+import Statistics from './Statistics';
 
 const Explore = () => {
     return (
@@ -32,6 +33,8 @@ const Explore = () => {
             <div className='md:col-span-6 col-span-4'>
                 <Image className='rounded-md' src='/explore/bg03-600x500.jpg' width={1000} height={1000} style={{ maxWidth: '600px', height: 'auto' }} alt='' />
             </div>
+
+            <Statistics />
         </div>
     )
 }
