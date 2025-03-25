@@ -1,10 +1,10 @@
 import React from 'react'
-import About from './About'
+import Blood from './Blood'
 
 const page = () => {
     return (
         <div>
-            <About />
+            <Blood />
         </div>
     )
 }

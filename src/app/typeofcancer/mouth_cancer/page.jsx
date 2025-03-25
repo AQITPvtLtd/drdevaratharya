@@ -1,10 +1,10 @@
 import React from 'react'
-import About from './About'
+import Mouth from './Mouth'
 
 const page = () => {
     return (
         <div>
-            <About />
+            <Mouth />
         </div>
     )
 }

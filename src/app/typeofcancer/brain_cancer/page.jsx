@@ -1,10 +1,10 @@
 import React from 'react'
-import About from './About'
+import Brain from './Brain'
 
 const page = () => {
     return (
         <div>
-            <About />
+            <Brain />
         </div>
     )
 }

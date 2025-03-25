@@ -1,10 +1,10 @@
 import React from 'react'
-import About from './About'
+import Cervical from './Cervical'
 
 const page = () => {
     return (
         <div>
-            <About />
+            <Cervical />
         </div>
     )
 }

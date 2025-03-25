@@ -56,8 +56,6 @@ const Header = () => {
                     : ""
                     }`}
             >
-
-
                 <header className="flex justify-around bg-primary bg-[#fa3e93] text-white">
                     <div className="container flex items-center">
                         <div className="flex items-center w-full justify-between lg:w-auto mx-5"></div>
@@ -132,13 +130,13 @@ const Header = () => {
                                                         </span>
                                                     </p>
                                                     <div
-                                                        className={`submenu relative left-0 top-full lg:ml-0 pl-4 rounded-sm transition-[top] duration-300 lg:absolute lg:top-[102%] lg:w-[250px] lg:p-4 bg-primary lg:shadow-lg ${openIndex == menuItem.id ? "block" : "hidden"
+                                                        className={`submenu relative text-black bg-white shadow-2xl left-0 top-full lg:ml-0 pl-4 rounded-sm transition-[top] duration-300 lg:absolute lg:top-[102%] lg:w-[250px] lg:p-4 bg-primary lg:shadow-lg ${openIndex == menuItem.id ? "block" : "hidden"
                                                             }`}
                                                     >
                                                         {menuItem.submenu.map((submenuItem, index) => (
                                                             <div
                                                                 key={index}
-                                                                className="group text-left relative grid"
+                                                                className="group text-left relative grid hover:bg-[#e81d77] hover:text-white"
                                                             >
                                                                 {submenuItem.path ? (
                                                                     <Link

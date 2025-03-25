@@ -8,7 +8,7 @@ const VisionAndmission = () => {
             <div className="flex flex-col items-center text-center md:w-1/2 border-b-2 md:border-b-0 md:border-r-2 border-gray-300 pb-6 md:pb-0 md:pr-6">
                 <div className="flex justify-center items-center mb-4 border-[#ef1a76] border-2 rounded-full w-28 h-28 p-2">
                     <Image
-                        src="/About/mission.png"
+                        src="/about/mission.png"
                         width={80}
                         height={80}
                         alt="Our Mission"
@@ -27,7 +27,7 @@ const VisionAndmission = () => {
             <div className="flex flex-col items-center text-center md:w-1/2 pt-6 md:pt-0 md:pl-6">
                 <div className="flex justify-center items-center mb-4 border-[#00aaff] border-2 rounded-full w-28 h-28 p-2">
                     <Image
-                        src="/About/vision.png"
+                        src="/about/vision.png"
                         width={80}
                         height={80}
                         alt="Our Vision"

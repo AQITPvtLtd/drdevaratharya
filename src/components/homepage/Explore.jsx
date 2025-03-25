@@ -1,42 +1,60 @@
-import React from 'react'
+import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { IoCheckmarkCircle } from "react-icons/io5";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import Statistics from './Statistics';
 
 const Explore = () => {
     return (
-        <div className='max-w-full mx-20 grid lg:grid-cols-12 mt-20'>
-            <div className='md:col-span-6 col-span-4'>
-                <span className='bg-[#f8fcf4] p-2 rounded-md'>What We Do</span>
-                <p className='mt-2 font-semibold text-5xl p-2'>Explore Oncology
-                    Departments</p>
-                <div className='flex gap-2 mt-5'><span className='bg-[#fa3e93] text-white font-bold p-1 px-2 text-3xl rounded-md'>O</span><p>ncology Enthusiastically mesh long-term high-impact infrastructures vis-a-vis efficient customer service leadership rather than experiences.</p></div>
-                <div className='md:flex block gap-30 mt-5'>
-                    <div className='list-none'>
-                        <div className='flex gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-2xl' /><li>Radiation Oncology</li></div>
-                        <div className='flex gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-2xl' /><li>Chemotherapy</li></div>
-                        <div className='flex gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-2xl' /><li>Breast Cancer Diagnosis</li></div>
+        <div className='max-w-screen-xl mx-auto px-6 md:px-12 lg:px-20 mt-20'>
+            <div className='grid lg:grid-cols-12 gap-10 items-center'>
+                {/* Left Section */}
+                <div className='lg:col-span-6'>
+                    <span className='bg-[#f8fcf4] px-4 py-2 rounded-md text-sm font-medium'>What We Do</span>
+                    <h2 className='mt-4 font-semibold text-4xl md:text-5xl leading-tight'>Various Forms of Cancer</h2>
+                    <p className='mt-4 text-gray-700'>
+                        Various cancers affect the body differently, requiring personalized care, early detection, and advanced treatments for better outcomes.
+                    </p>
+
+                    {/* Cancer List */}
+                    <div className='grid sm:grid-cols-2 gap-4 mt-6'>
+                        <ul className='space-y-3'>
+                            <li className='flex items-center gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-xl' />Lung Cancer</li>
+                            <li className='flex items-center gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-xl' />Cervical Cancer</li>
+                            <li className='flex items-center gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-xl' />Prostate Cancer</li>
+                            <li className='flex items-center gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-xl' />Mouth and Oral Cancer</li>
+                            <li className='flex items-center gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-xl' />Colorectal Cancer</li>
+                        </ul>
+                        <ul className='space-y-3'>
+                            <li className='flex items-center gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-xl' />Blood Cancer</li>
+                            <li className='flex items-center gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-xl' />Brain Cancer</li>
+                            <li className='flex items-center gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-xl' />Bone Cancer</li>
+                            <li className='flex items-center gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-xl' />Breast Cancer</li>
+                        </ul>
                     </div>
-                    <div className='list-none'>
-                        <div className='flex gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-2xl' /><li>Facilities and Equipment</li></div>
-                        <div className='flex gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-2xl' /><li>Medical Consulting</li></div>
-                        <div className='flex gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-2xl' /><li>Cancer Treatment</li></div>
-                    </div>
+
+                    {/* Contact Button */}
+                    <Link href="/" className='mt-6 inline-flex items-center gap-2 bg-[#fa3e93] text-white px-5 py-3 rounded-md text-lg font-semibold border-2 border-[#fa3e93] transition duration-300 hover:bg-white hover:text-[#fa3e93]'>
+                        Contact us <MdOutlineArrowOutward className='text-xl' />
+                    </Link>
                 </div>
 
-                <div className='mt-10'>
-                    <button className='bg-[#fa3e93] text-white border-2 border-[#fa3e93] rounded-md px-10 py-3 font-semibold hover:bg-white hover:text-black'><span className='flex'>Learn More<MdOutlineArrowOutward /></span></button>
+                {/* Right Section (Image) */}
+                <div className='lg:col-span-6 flex justify-center'>
+                    <Image
+                        className='rounded-md'
+                        src='/explore/bg03-600x500.jpg'
+                        width={600}
+                        height={500}
+                        alt='Cancer Types'
+                    />
                 </div>
             </div>
-
-            <div className='md:col-span-6 col-span-4'>
-                <Image className='rounded-md' src='/explore/bg03-600x500.jpg' width={1000} height={1000} style={{ maxWidth: '600px', height: 'auto' }} alt='' />
-            </div>
-
+            {/* Statistics Component */}
             <Statistics />
         </div>
-    )
-}
+    );
+};
 
-export default Explore
+export default Explore;

@@ -25,43 +25,43 @@ const menuData = [
             {
                 id: 41,
                 title: "Lung Cancer",
-                path: "",
+                path: "/typeofcancer/lung_cancer",
                 newTab: false
             },
             {
                 id: 42,
                 title: "Cervical Cancer",
-                path: "",
+                path: "/typeofcancer/cervical_cancer",
                 newTab: false
             },
             {
                 id: 43,
                 title: "Prostate Cancer",
-                path: "",
+                path: "/typeofcancer/prostate_cancer",
                 newTab: false
             },
             {
                 id: 44,
                 title: "Mouth and Oral Cancer",
-                path: "",
+                path: "/typeofcancer/mouth_cancer",
                 newTab: false
             },
             {
                 id: 45,
                 title: "Colorectal Cancer",
-                path: "",
+                path: "/typeofcancer/colorectal_cancer",
                 newTab: false
             },
             {
                 id: 46,
                 title: "Blood Cancer",
-                path: "",
+                path: "/typeofcancer/blood_cancer",
                 newTab: false
             },
             {
                 id: 47,
                 title: "Brain Cancer",
-                path: "",
+                path: "/typeofcancer/brain_cancer",
                 newTab: false
             },
             {
