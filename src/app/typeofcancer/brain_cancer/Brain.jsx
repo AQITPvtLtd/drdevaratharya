@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Type from '@/components/common/Type'
 const Brain = () => {
     return (
         <div>
@@ -8,7 +9,7 @@ const Brain = () => {
                     {/* Image Section */}
                     <div className="w-full max-w-7xl relative">
                         <Image
-                            src="/typeofcancer/blood.avif"
+                            src="/typeofcancer/brain.png"
                             width={1000}
                             height={500}
                             className="w-full h-[300px] object-cover rounded-lg shadow-lg"
@@ -42,7 +43,6 @@ const Brain = () => {
                                 <li><strong>Environmental Toxins: </strong> Prolonged exposure to harmful chemicals, pesticides, or industrial pollutants may contribute to brain tumor development.</li>
                             </ul>
 
-
                             <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">
                                 Types of Brain Cancer
                             </h2>
@@ -50,120 +50,110 @@ const Brain = () => {
 
                             <ul className="list-disc list-outside text-gray-700 mt-2 space-y-2">
                                 <li><strong>Gliomas: </strong>The most common type, originating in glial cells that support brain function.</li>
-                                <li><strong>Meningiomas:</strong> A more common type that includes various subtypes, affecting B-cells or T-cells.</li>
-                                <li><strong>Medulloblastomas::</strong> A more common type that includes various subtypes, affecting B-cells or T-cells.</li>
+                                <li><strong>Meningiomas:</strong> Tumors that develop in the meninges, the protective layers of the brain and spinal cord.</li>
+                                <li><strong>Medulloblastomas:</strong> Fast-growing tumors that usually occur in children and affect the cerebellum.</li>
 
-                                <li><strong>Pituitary Tumors:</strong> A more common type that includes various subtypes, affecting B-cells or T-cells.</li>
+                                <li><strong>Pituitary Tumors:</strong> Develop in the pituitary gland and can affect hormone production.</li>
 
-                                <li><strong>Metastatic Brain Tumors::</strong> A more common type that includes various subtypes, affecting B-cells or T-cells.</li>
+                                <li><strong>Metastatic Brain Tumors:</strong> Cancers that spread to the brain from other parts of the body, such as lung or breast cancer.</li>
 
                             </ul>
 
+                            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">
+                                Symptoms of Brain Cancer
+                            </h2>
+                            <p className="text-gray-700">The symptoms of brain cancer vary depending on the tumor’s location, size, and growth rate. Some common signs include:</p>
+                            <ul className="list-disc list-outside text-gray-700 mt-2 space-y-2">
+                                <li><strong>Persistent Headaches:</strong>Frequent and severe headaches, often worse in the morning.</li>
+                                <li><strong>Seizures:</strong> Sudden and unexplained seizures, even without a history of epilepsy.</li>
+                                <li><strong>Nausea and Vomiting:</strong> Persistent nausea, especially in the morning, can be a sign of increased brain pressure.</li>
+                                <li><strong>Vision and Hearing Problems:</strong> Blurred vision, double vision, or hearing loss may occur.</li>
+                                <li><strong>Memory and Cognitive Issues: </strong> Difficulty concentrating, confusion, or trouble recalling information.</li>
+                                <li><strong>Loss of Balance and Coordination: </strong> Difficulty walking, dizziness, or problems with fine motor skills.</li>
+                                <li><strong>Weakness or Numbness: </strong> Paralysis or numbness in one part of the body, often affecting an arm or leg.</li>
+                                <li><strong>Speech and Personality Changes: </strong> Difficulty speaking, mood swings, or changes in behavior and personality.</li>
+                            </ul>
+
+
+                            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">
+                                Diagnosis of Brain Cancer
+                            </h2>
+                            <p className="text-gray-700">To diagnose brain cancer, doctors perform several tests, including:</p>
+                            <ul className="list-disc list-outside text-gray-700 mt-2 space-y-2">
+                                <li><strong>Neurological Exam: </strong>  Tests reflexes, balance, coordination, and cognitive abilities.</li>
+                                <li><strong>Imaging Tests: </strong> MRI (Magnetic Resonance Imaging) and CT (Computed Tomography) scans help detect tumors.</li>
+                                <li><strong>Biopsy: </strong> A small sample of brain tissue is taken to determine if the tumor is cancerous.</li>
+                                <li><strong>Lumbar Puncture (Spinal Tap):</strong> Examines cerebrospinal fluid for cancer cells.</li>
+
+                            </ul>
+
+
+
+                            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">
+                                Treatment Options for Brain Cancer
+                            </h2>
+                            <p className="text-gray-700">Treatment for brain cancer depends on the type, size, and location of the tumor, as well as the patient’s overall health. Common treatment options include:</p>
 
                             <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-3">
-                                3. Myeloma
+                                1. Surgery
                             </h3>
-                            <p className="text-gray-700">Myeloma, also known as multiple myeloma, affects plasma cells in the bone marrow. These cells produce antibodies to fight infections, but in myeloma, abnormal plasma cells multiply uncontrollably, weakening the immune system and bones.</p>
+                            <p className="text-gray-700">If the tumor is accessible, surgeons remove as much of it as possible without damaging healthy brain tissue. In some cases, complete removal is not possible, and additional treatments are needed.</p>
 
-                            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">
-                                Causes and Risk Factors of Blood Cancer
-                            </h2>
-                            <p className="text-gray-700">The exact cause of blood cancer is not always known, but several risk factors can increase the likelihood of developing the disease:</p>
-                            <ul className="list-disc list-outside text-gray-700 mt-2 space-y-2">
-                                <li><strong>Genetic Mutations:</strong>Abnormal changes in DNA can lead to uncontrolled cell growth.</li>
-                                <li><strong>Family History:</strong> Individuals with a family history of blood cancer have a higher risk.</li>
-                                <li><strong>Exposure to Radiation and Chemicals:</strong> High exposure to radiation, benzene, or industrial chemicals can increase risk.</li>
-                                <li><strong>Weakened Immune System:</strong> Conditions like HIV/AIDS or immune suppression due to organ transplants can contribute to blood cancer.</li>
-                                <li><strong>Certain Infections: </strong> Some viruses, such as the Epstein-Barr virus (EBV) and human T-cell leukemia virus (HTLV-1), are linked to blood cancers.</li>
-                                <li><strong>Smoking and Unhealthy Lifestyle: </strong> Smoking, excessive alcohol consumption, and a poor diet can weaken the immune system and increase cancer risk.</li>
-                            </ul>
-
-
-                            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">
-                                Symptoms of Blood Cancer
-                            </h2>
-                            <p className="text-gray-700">The symptoms of blood cancer can vary depending on the type, but some common signs include:</p>
-                            <ul className="list-disc list-outside text-gray-700 mt-2 space-y-2">
-                                <li><strong>Persistent Fatigue and Weakness: </strong> The body produces fewer healthy blood cells, leading to low energy levels.</li>
-                                <li><strong>Frequent Infections and Fever: </strong> A weakened immune system makes the body more vulnerable to infections.</li>
-                                <li><strong>Unexplained Weight Loss: </strong> Cancer cells consume more energy, leading to sudden weight loss.</li>
-                                <li><strong>Swollen Lymph Nodes:</strong> Painless swelling in the neck, armpits, or groin may indicate lymphoma.</li>
-                                <li><strong>Easy Bruising or Bleeding:</strong> Low platelet count can cause frequent nosebleeds, gum bleeding, and easy bruising.</li>
-                                <li><strong>Bone Pain: </strong> Myeloma often causes pain in the bones, especially in the back and ribs.</li>
-                                <li><strong>Night Sweats: </strong>Excessive sweating at night can be an early sign of lymphoma or leukemia.</li>
-                                <li><strong>Shortness of Breath: </strong> Low red blood cell count (anemia) can make it difficult to breathe properly.</li>
-                            </ul>
-
-
-
-                            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">
-                                Diagnosis of Blood Cancer
-                            </h2>
-                            <p className="text-gray-700">To detect blood cancer, doctors perform various tests, including:</p>
-                            <ul className="list-disc list-outside text-gray-700 mt-2 space-y-2">
-                                <li><strong>Complete Blood Count (CBC): </strong> Measures red blood cells, white blood cells, and platelet levels.</li>
-                                <li><strong>Bone Marrow Biopsy: </strong> A sample of bone marrow is taken to check for cancerous cells.</li>
-                                <li><strong>Lymph Node Biopsy: </strong> Examines lymphatic tissue for lymphoma.</li>
-                                <li><strong>Molecular and Genetic Tests: </strong>  Identifies specific mutations linked to blood cancer.</li>
-                                <li><strong>Imaging Tests (CT, MRI, PET Scans): </strong>Helps determine the spread of cancer in the body.</li>
-                            </ul>
-                            <p className="text-gray-700">
-                                Early diagnosis increases the chances of successful treatment.
-                            </p>
-
-
-                            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">
-                                Treatment Options for Blood Cancer
-                            </h2>
-                            <p className="text-gray-700">The treatment of blood cancer depends on the type and stage of the disease. Common treatment options include:</p>
-
-                            <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-3">
-                                1. Chemotherapy
-                            </h3>
-                            <p className="text-gray-700">Drugs are used to kill cancer cells or stop their growth. It is often the first line of treatment for leukemia and lymphoma.</p>
 
                             <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-3">
                                 2. Radiation Therapy
-
                             </h3>
-                            <p className="text-gray-700">High-energy radiation targets and destroys cancer cells, often used for lymphoma or before a bone marrow transplant.</p>
+                            <p className="text-gray-700">High-energy beams are used to destroy cancer cells and shrink tumors. This treatment is often recommended for patients who cannot undergo surgery.</p>
+
 
                             <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-3">
-                                3. Immunotherapy
+                                3. Chemotherapy
                             </h3>
-                            <p className="text-gray-700">This treatment boosts the body’s immune system to fight cancer cells more effectively.</p>
+                            <p className="text-gray-700">Cancer-fighting drugs are used to kill tumor cells. Chemotherapy can be administered orally, intravenously, or directly into the cerebrospinal fluid.</p>
 
                             <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-3">
                                 4. Targeted Therapy
                             </h3>
-                            <p className="text-gray-700">Drugs specifically target cancer cells without harming normal cells. This is often used for specific genetic mutations in blood cancer.</p>
+                            <p className="text-gray-700">Special drugs target specific cancer cells without harming normal cells, reducing side effects compared to chemotherapy.</p>
+
 
                             <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-3">
-                                5. Bone Marrow or Stem Cell Transplant
+                                5. Immunotherapy
                             </h3>
-                            <p className="text-gray-700">Replaces damaged bone marrow with healthy stem cells from a donor or the patient’s own body. This is often used for leukemia and myeloma patients.</p>
+                            <p className="text-gray-700">Boosts the body's immune system to help fight cancer cells more effectively.</p>
+                            <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-3">
+                                6. Supportive Therapies
+                            </h3>
+                            <p className="text-gray-700">Patients may need medications to manage symptoms such as seizures, swelling, or pain. Physical therapy, speech therapy, and occupational therapy can help improve quality of life after treatment.</p>
 
 
-                            <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">
-                                Prevention of Blood Cancer
-                            </h3>
-                            <p className="text-gray-700">Although some risk factors cannot be controlled, certain lifestyle changes can help reduce the chances of developing blood cancer:</p>
+
+                            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">
+                                Prevention of Brain Cancer
+                            </h2>
+                            <p className="text-gray-700">While there is no guaranteed way to prevent brain cancer, some lifestyle choices may reduce the risk:</p>
+
 
                             <ul className="list-disc list-outside text-gray-700 mt-2 space-y-2">
-                                <li><strong>Maintain a Healthy Diet: </strong> Eat a balanced diet rich in fruits, vegetables, and whole grains to boost immunity.</li>
-                                <li><strong>Exercise Regularly: </strong> Staying physically active helps maintain a healthy weight and reduces cancer risk.</li>
-                                <li><strong>Avoid Smoking and Limit Alcohol Consumption: </strong> Both are linked to increased cancer risk.</li>
-                                <li><strong>Reduce Exposure to Harmful Chemicals: </strong> Avoid prolonged exposure to benzene, pesticides, and industrial chemicals.</li>
-                                <li><strong>Stay Hydrated and Get Enough Sleep: </strong>Proper hydration and rest help the body function properly.</li>
-                                <li><strong>Regular Health Check-ups: </strong>Early detection through routine medical screenings can improve treatment outcomes.</li>
-                                <li><strong>Manage Stress: </strong>High stress levels can weaken the immune system, so practicing relaxation techniques like meditation and yoga is beneficial.</li>
+                                <li><strong>Avoid Radiation Exposure: </strong> Limit unnecessary exposure to high doses of radiation.</li>
+                                <li><strong>Maintain a Healthy Diet: </strong> Eat a balanced diet rich in fruits, vegetables, and whole grains.</li>
+                                <li><strong>Exercise Regularly: </strong> Staying physically active promotes overall brain health.</li>
+                                <li><strong>Avoid Harmful Chemicals: </strong>  Reduce exposure to toxic chemicals and industrial pollutants.</li>
+                                <li><strong>Protect the Head: </strong>Wear helmets when engaging in activities that pose a risk of head injury.</li>
+                                <li><strong>Manage Stress: </strong>Practicing relaxation techniques like meditation and yoga can improve brain function.</li>
+                                <li><strong>Regular Medical Check-ups: </strong>Routine health screenings can help detect potential issues early.</li>
                             </ul>
 
                             <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">
                                 Conclusion
                             </h2>
                             <p className="text-gray-700">
-                                Blood cancer is a life-threatening disease, but with early detection, modern treatments, and preventive measures, the chances of survival have improved significantly. Raising awareness, maintaining a healthy lifestyle, and seeking timely medical advice can help reduce the risk of blood cancer and improve overall well-being.                            </p>
+                                Brain cancer is a life-threatening disease that requires early diagnosis and aggressive treatment. Although its exact cause is not always known, understanding risk factors and symptoms can help individuals seek timely medical intervention. Advances in medical research have improved treatment options, giving patients a better chance of survival. By leading a healthy lifestyle and staying informed, individuals can take proactive steps to reduce their risk of brain cancer.
+                            </p>
+                        </div>
+
+                        <div className="col-span-3 sticky top-20">
+                            <Type />
                         </div>
                     </div>
                 </div>

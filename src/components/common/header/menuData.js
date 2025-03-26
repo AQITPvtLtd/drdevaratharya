@@ -67,13 +67,13 @@ const menuData = [
             {
                 id: 48,
                 title: "Bone Cancer",
-                path: "",
+                path: "/typeofcancer/bone_cancer",
                 newTab: false
             },
             {
                 id: 49,
                 title: "Breast Cancer",
-                path: "",
+                path: "/typeofcancer/breast_cancer",
                 newTab: false
             },
         ]
@@ -107,7 +107,7 @@ const menuData = [
     {
         id: 7,
         title: "Contact",
-        path: "/",
+        path: "/contact",
         newTab: false
     },
 ]

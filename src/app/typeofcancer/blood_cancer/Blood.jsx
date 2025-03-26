@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Type from '@/components/common/Type'
 const Blood = () => {
     return (
         <div>
@@ -160,6 +161,10 @@ const Blood = () => {
                             </h2>
                             <p className="text-gray-700">
                                 Blood cancer is a life-threatening disease, but with early detection, modern treatments, and preventive measures, the chances of survival have improved significantly. Raising awareness, maintaining a healthy lifestyle, and seeking timely medical advice can help reduce the risk of blood cancer and improve overall well-being.                            </p>
+                        </div>
+
+                        <div className="col-span-3 sticky top-20">
+                            <Type />
                         </div>
                     </div>
                 </div>

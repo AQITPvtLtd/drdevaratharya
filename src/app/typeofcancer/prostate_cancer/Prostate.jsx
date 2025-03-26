@@ -1,9 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
+import Type from '@/components/common/Type'
 const Prostate = () => {
     return (
         <div>
-            <div className="mx-auto py-12 bg-gray-50">
+            <div className=" py-6 bg-gray-50">
                 <div className="flex flex-col items-center">
                     {/* Image Section */}
                     <div className="w-full max-w-7xl relative">
@@ -92,7 +93,10 @@ const Prostate = () => {
                                 Prostate cancer is a serious health concern, but with early detection and appropriate treatment, survival rates are high. Men over 50 should undergo regular screenings and adopt a healthy lifestyle to reduce their risk. Awareness, timely diagnosis, and preventive measures can help fight prostate cancer effectively.
                             </p>
                         </div>
-                    </div>
+                        <div className="col-span-3 sticky top-20">
+                            <Type />
+                        </div>
+                    </div>  
                 </div>
             </div>
         </div>

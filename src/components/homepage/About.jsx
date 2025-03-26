@@ -11,7 +11,7 @@ const About = () => {
         {/* Image Section */}
         <div className="md:col-span-6 flex justify-center">
           <Image
-            src="/about/team-3.png"
+            src="/about/drdevavrat.png"
             width={500}
             height={500}
             className="w-full max-w-[400px] md:max-w-[500px] rounded-lg shadow-lg"

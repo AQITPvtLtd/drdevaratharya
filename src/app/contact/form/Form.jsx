@@ -1,108 +1,182 @@
-import React from 'react'
+"use client";
+
+import { form } from '@/services/user';
+import { useRouter } from 'next/navigation';
+import React, { useState } from 'react';
+import Swal from 'sweetalert2';
 import { ClipLoader } from "react-spinners";
 
 const Form = () => {
+    const router = useRouter();
+    const [loading, setLoading] = useState(false);
+    const [formData, setFormData] = useState({
+        fullname: "",
+        email: "",
+        phone: "",
+        location: "",
+        message: "",
+        MedicalReport: null,
+    });
+
+    const handlechange = (e) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+    }
+
+
+    const handleFileChange = (e) => {
+        const file = e.target.files[0];
+        if (file) {
+            if (file.size > 10 * 1024 * 1024) {
+                Swal.fire({
+                    icon: "warning",
+                    title: "File Too Large",
+                    text: "Please upload a file smaller than 10MB.",
+                });
+                e.target.value = "";
+                return;
+            }
+            setFormData({ ...formData, MedicalReport: file });
+        }
+    }
+
+
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setLoading(true);
+
+        const formDataToSend = new FormData();
+        formDataToSend.append("fullname", formData.fullname);
+        formDataToSend.append("phone", formData.phone);
+        formDataToSend.append("email", formData.email);
+        formDataToSend.append("location", formData.location);
+        formDataToSend.append("message", formData.message);
+
+        if (formData.MedicalReport) {
+            formDataToSend.append("MedicalReport", formData.MedicalReport);
+        }
+
+        try {
+            const response = await form(formDataToSend)
+            if (response.success) {
+                Swal.fire({
+                    title: "Form Submitted Successfully!",
+                    text: "We have received your information.",
+                    icon: "success",
+                });
+                setFormData({
+                    fullname: "",
+                    phone: "",
+                    email: "",
+                    location: "",
+                    message: "",
+                    MedicalReport: null
+                })
+                router.push("/")
+            } else {
+                Swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "Something went wrong! Please try again later.",
+                })
+            }
+        } catch (error) {
+            Swal.fire({
+                icon: "error",
+                title: "Error",
+                text: "Failed to submit the form. Please check your network and try again.",
+            })
+        }
+        finally {
+            setLoading(false)
+        }
+    };
+
+
     return (
-        <div>
-            <h1 className="text-3xl font-bold text-[#fa3e93] text-center">
+        <div className="max-w-2xl mx-auto p-6 bg-white shadow-lg rounded-lg">
+            <h1 className="text-3xl font-bold text-[#fa3e93] text-center mb-6">
                 Submit Your Query
             </h1>
-            <form>
-                <div className="py-1">
-                    <label
-                        htmlFor="name"
-                        className="block text-md font-medium mb-1 text-primary">
-                        Full Name
-                    </label>
+            <form className="space-y-4" onSubmit={handleSubmit}>
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
                     <input
-                        type="text"
-                        placeholder="Enter Your Full name"
-                        className="border border-gray-300 p-3 rounded-md focus:outline-none focus:border-[#fa3e93] w-full"
-                        name="name"
+                        className='bg-gray-100 p-3 w-full rounded-md border focus:border-[#fa3e93] focus:ring-1 focus:ring-[#fa3e93] outline-none'
+                        placeholder='Your Name'
+                        type='text'
+                        id='fullname'
+                        name='fullname'
+                        value={formData.fullname}
+                        onChange={handlechange}
+                    />
+                    <input
+                        className='bg-gray-100 p-3 w-full rounded-md border focus:border-[#fa3e93] focus:ring-1 focus:ring-[#fa3e93] outline-none'
+                        placeholder='Phone Number'
+                        type='number'
+                        id='phone'
+                        name='phone'
+                        value={formData.phone}
+                        onChange={handlechange}
                     />
                 </div>
-
-                <div className="pb-1">
-                    <label
-                        htmlFor="email"
-                        className="block text-md font-medium mb-1 text-primary">
-                        Email Address
-                    </label>
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
                     <input
-                        type="email"
-                        placeholder="Enter Your email address"
-                        className="border border-gray-300 p-3 rounded-md focus:outline-none focus:border-[#fa3e93] w-full"
-                        name="email"
+                        className='bg-gray-100 p-3 w-full rounded-md border focus:border-[#fa3e93] focus:ring-1 focus:ring-[#fa3e93] outline-none'
+                        placeholder='Email Address'
+                        type='email'
+                        id='email'
+                        name='email'
+                        value={formData.email}
+                        onChange={handlechange}
+                    />
+                    <input
+                        className='bg-gray-100 p-3 w-full rounded-md border focus:border-[#fa3e93] focus:ring-1 focus:ring-[#fa3e93] outline-none'
+                        placeholder='Enter Your Location'
+                        type='location'
+                        id='location'
+                        name='location'
+                        value={formData.location}
+                        onChange={handlechange}
                     />
                 </div>
+                <textarea
+                    className='bg-gray-100 p-3 w-full rounded-md border focus:border-[#fa3e93] focus:ring-1 focus:ring-[#fa3e93] outline-none'
+                    placeholder='Describe Health Problem...'
+                    rows='4'
+                    id='message'
+                    name='message'
+                    value={formData.message}
+                    onChange={handlechange}
+                ></textarea>
 
-                <div className="pb-1">
-                    <label
-                        htmlFor="phone"
-                        className="block text-md font-medium mb-1 text-primary">
-                        Phone Number
-                    </label>
-                    <input
-                        type="tel"
-                        placeholder="Enter Your Phone Number"
-                        className="border border-gray-300 p-3 rounded-md focus:outline-none focus:border-[#fa3e93] w-full"
-                        name="phone"
-                    />
-                </div>
-
-                <div className="pb-1">
-                    <label
-                        htmlFor="location"
-                        className="block text-md font-medium mb-1 text-primary">
-                        Location
-                    </label>
-                    <input
-                        type="text"
-                        placeholder="Enter Your Current Location"
-                        className="border border-gray-300 p-3 rounded-md focus:outline-none focus:border-[#fa3e93] w-full"
-                        name="location"
-                    />
-                </div>
-
-                <div className="pb-1">
-                    <label
-                        htmlFor="message"
-                        className="block text-md font-medium mb-1 text-primary">
-                        Write Problem English / Hindi
-                    </label>
-                    <textarea
-                        placeholder="Describe Health Problem..."
-                        className="border border-gray-300 p-3 rounded-md focus:outline-none focus:border-[#fa3e93] h-32 w-full"
-                        name="message"
-                    ></textarea>
-                </div>
-
-                <div className="pb-2">
-                    <label
-                        htmlFor="MedicalReport"
-                        className="block text-md font-medium mb-1 text-primary">
+                <div>
+                    <label htmlFor="MedicalReport" className="block text-md font-medium mb-2 text-gray-700">
                         Upload Medical Report (Optional)
                     </label>
                     <input
                         type="file"
                         id="MedicalReport"
                         name="MedicalReport"
+                        onChange={handleFileChange}
                         accept=".pdf, .doc, .docx, .xls, .xlsx, .txt, .jpg, .png, .jpeg, .avif"
-                        className="border bg-white border-gray-300 p-3 rounded-md focus:outline-none focus:border-[#fa3e93] w-full"
+                        className="border bg-gray-100 border-gray-300 p-3 rounded-md w-full focus:border-[#fa3e93] focus:ring-1 focus:ring-[#fa3e93] outline-none"
                     />
                 </div>
 
-                <div>
-                    {/* <div className="flex justify-center items-center w-full h-full bg-gray-500 bg-opacity-50 rounded-md fixed top-0 left-0 z-50">
-                        <ClipLoader width="60" height="60" color="#092644" className="animate-spin" />
-                    </div> */}
-                    <button className="bg-[#fa3e93] border-2 border-[#fa3e93] font-semibold p-3 text-white rounded-xl hover:bg-white hover:text-black transition">
-                        Send Message
-                    </button>
-                </div>
-            </form>
-        </div>
-    )
-}
+                <div className="text-center mt-4">
+                    {
+                        loading ? (<div className="flex justify-center items-center w-full h-full bg-gray-500 bg-opacity-50 rounded-md fixed top-0 left-0 z-50">
+                            <ClipLoader width="60" height="60" color="#eb5f30" className="animate-spin" />
+                        </div>) : (<button className="bg-[#fa3e93] border-2 border-[#fa3e93] font-semibold px-6 py-3 text-white rounded-xl hover:bg-white hover:text-[#fa3e93] transition duration-300">
+                            Send Message
+                        </button>)
+                    }
 
-export default Form
+                </div>
+            </form >
+        </div >
+    );
+};
+
+export default Form;

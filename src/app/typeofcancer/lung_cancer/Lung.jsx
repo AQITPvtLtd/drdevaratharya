@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-
+import Type from "@/components/common/Type";
 const Lung = () => {
     return (
-        <div className="mx-auto py-12 bg-gray-50">
+        <div className="mx-auto py-6 bg-gray-50">
             <div className="flex flex-col items-center">
                 {/* Image Section */}
                 <div className="w-full max-w-7xl relative">
@@ -99,6 +99,10 @@ const Lung = () => {
                         <p className="text-gray-700">
                             Lung cancer remains a serious health concern, but early detection and advanced treatments have improved survival rates. Raising awareness can help reduce its impact. If you or a loved one experiences persistent symptoms, consult a doctor as soon as possible.
                         </p>
+                    </div>
+
+                    <div className="col-span-3 sticky top-20">
+                        <Type />
                     </div>
                 </div>
             </div>

@@ -1,9 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
+import Type from '@/components/common/Type'
 const Colorectal = () => {
     return (
         <div>
-            <div className="mx-auto py-12 bg-gray-50">
+            <div className="mx-auto py-6 bg-gray-50">
                 <div className="flex flex-col items-center">
                     {/* Image Section */}
                     <div className="w-full max-w-7xl relative">
@@ -90,6 +91,9 @@ const Colorectal = () => {
                             <p className="text-gray-700">
                                 Colorectal cancer is a serious but preventable and treatable disease when detected early. A healthy lifestyle, regular screenings, and timely medical attention can help reduce the risk and improve survival rates. Raising awareness and adopting preventive measures can go a long way in protecting against this condition.
                             </p>
+                        </div>
+                        <div className="col-span-3 sticky top-20">
+                            <Type />
                         </div>
                     </div>
                 </div>

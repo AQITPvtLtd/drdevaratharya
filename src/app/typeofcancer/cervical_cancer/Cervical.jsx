@@ -1,10 +1,10 @@
 import React from 'react'
 import Image from "next/image";
-
+import Type from '@/components/common/Type';
 const Cervical = () => {
     return (
         <div>
-            <div className="mx-auto py-12 bg-gray-50">
+            <div className="mx-auto py-6 bg-gray-50">
                 <div className="flex flex-col items-center">
                     {/* Image Section */}
                     <div className="w-full max-w-7xl relative">
@@ -87,6 +87,9 @@ const Cervical = () => {
                                 Conclusion
                             </h2>
                             <p className="text-gray-700">Cervical cancer is a preventable and treatable disease if detected early. Awareness, vaccination, and regular screening play a crucial role in reducing the risk. By adopting a healthy lifestyle and seeking timely medical advice, women can protect themselves from this life-threatening condition.</p>
+                        </div>
+                        <div className="col-span-3 sticky top-20">
+                            <Type />
                         </div>
                     </div>
                 </div>

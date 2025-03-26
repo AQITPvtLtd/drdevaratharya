@@ -1,9 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
+import Type from '@/components/common/Type'
 const Mouth = () => {
     return (
         <div>
-            <div className="mx-auto py-12 bg-gray-50">
+            <div className="mx-auto py-6 bg-gray-50">
                 <div className="flex flex-col items-center">
                     {/* Image Section */}
                     <div className="w-full max-w-7xl relative">
@@ -76,6 +77,9 @@ const Mouth = () => {
                             <p className="text-gray-700">
                                 Mouth and oral cancer is a preventable and treatable disease if detected early. Avoiding tobacco, alcohol, and maintaining good oral hygiene can significantly reduce the risk. Regular screenings and awareness play a crucial role in early detection and successful treatment. By taking preventive measures and seeking timely medical advice, individuals can protect themselves from this life-threatening disease.
                             </p>
+                        </div>
+                        <div className="col-span-3 sticky top-20">
+                            <Type />
                         </div>
                     </div>
                 </div>
