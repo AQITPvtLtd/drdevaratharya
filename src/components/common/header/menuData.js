@@ -98,7 +98,7 @@ const menuData = [
             {
                 id: 62,
                 title: "Videos ",
-                path: "",
+                path: "/media/videos",
                 newTab: false
             },
 
