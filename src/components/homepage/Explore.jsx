@@ -8,7 +8,8 @@ import Statistics from './Statistics';
 const Explore = () => {
     return (
         <div className='max-w-screen-xl mx-auto px-6 md:px-12 lg:px-20 mt-20'>
-            <div className='grid lg:grid-cols-12 gap-10 items-center'>
+            <div className='lg:grid lg:grid-cols-12 gap-10 items-center flex flex-col-reverse'>
+
                 {/* Left Section */}
                 <div className='lg:col-span-6'>
                     <span className='bg-[#f8fcf4] px-4 py-2 rounded-md text-sm font-medium'>What We Do</span>

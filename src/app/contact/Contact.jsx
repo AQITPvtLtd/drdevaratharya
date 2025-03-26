@@ -10,19 +10,7 @@ const Contact = () => {
     return (
         <div className="">
             <div className="">
-                <div className="relative">
-                    <Image
-                        src="/contact/santoshCon.jpeg"
-                        width={800}
-                        height={800}
-                        className="w-full h-[30vh] lg:h-[40vh] md:h-[35vh] object-cover"
-                        alt="service Image"
-                    />
-                    <div className="absolute"></div>
-                    <h1 className="text-white font-serif text-center text-4xl md:text-6xl font-bold my-4 absolute inset-0 z-20 flex items-center justify-center">
-                        Get in Touch
-                    </h1>
-                </div>
+
                 <div className="bg-white flex justify-center mt-[50px] px-4">
                     <div className="w-full max-w-6xl flex flex-col md:flex-row gap-8 px-4 md:px-10">
                         {/* Left Section: Address Details */}
@@ -57,18 +45,18 @@ const Contact = () => {
                                 </div>
                             </Link>
 
-                            <Link href="">
+                            <Link href="mailto:drdevavratarya@gmail.com">
                                 <div className="flex items-start cursor-pointer">
                                     <MdEmail
                                         aria-label="Email Icon"
                                         className="text-4xl text-white bg-[#fa3e93] p-1 rounded-full"
                                     />
-                                    {/* <div className="ml-4">
+                                    <div className="ml-4">
                                         <h3 className="text-lg font-semibold">Email Address</h3>
                                         <p className="text-gray-700">
-                                            officialsantoshghai@gmail.com
+                                            drdevavratarya@gmail.com
                                         </p>
-                                    </div> */}
+                                    </div>
                                 </div>
                             </Link>
                         </div>

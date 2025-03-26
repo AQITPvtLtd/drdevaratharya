@@ -113,7 +113,7 @@ const Form = () => {
                     <input
                         className='bg-gray-100 p-3 w-full rounded-md border focus:border-[#fa3e93] focus:ring-1 focus:ring-[#fa3e93] outline-none'
                         placeholder='Phone Number'
-                        type='number'
+                        type='text'
                         id='phone'
                         name='phone'
                         value={formData.phone}
@@ -168,7 +168,7 @@ const Form = () => {
                     {
                         loading ? (<div className="flex justify-center items-center w-full h-full bg-gray-500 bg-opacity-50 rounded-md fixed top-0 left-0 z-50">
                             <ClipLoader width="60" height="60" color="#eb5f30" className="animate-spin" />
-                        </div>) : (<button className="bg-[#fa3e93] border-2 border-[#fa3e93] font-semibold px-6 py-3 text-white rounded-xl hover:bg-white hover:text-[#fa3e93] transition duration-300">
+                        </div>) : (<button className="bg-[#fa3e93] border-2 border-[#fa3e93] font-semibold cursor-pointer px-6 py-3 text-white rounded-xl hover:bg-white hover:text-[#fa3e93] transition duration-300">
                             Send Message
                         </button>)
                     }

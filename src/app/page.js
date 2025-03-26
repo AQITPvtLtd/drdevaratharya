@@ -3,6 +3,7 @@ import Appointment from "@/components/homepage/Appointment";
 import Banner from "@/components/homepage/Banner";
 import Explore from "@/components/homepage/Explore";
 import OncologyServices from "@/components/homepage/OncologyServices";
+import Faq from "./about/Faq";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       {/* <BackgroundPaths /> */}
       <Explore />
       <Appointment />
+      <Faq />
     </div>
   );
 }

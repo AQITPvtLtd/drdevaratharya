@@ -17,11 +17,11 @@ export async function POST(request) {
         // Database Insert Query
         await pool.query(
             "INSERT INTO Contact (date,id ,fullname, phone, email, location, message, MedicalReport) VALUES(NOW(), ?,?,?,?,?,?,?)",
-            [unique_id, fullname, phone, email, location, message, MedicalReport]
+            [unique_id, fullname, phone, email, location, message, MedicalReport.name]
         )
 
         // Nodemailer Transporter
-        nodemailer.createTransport({
+        const transporter = nodemailer.createTransport({
             service: "gmail",
             host: "smtp.gmail.com",
             secure: true,
@@ -43,9 +43,9 @@ export async function POST(request) {
                 <p>Message:</p>
                 <p>${message}</p>
               </body>
-             </html>`,
+            </html>`,
 
-            attachment: MedicalReport ? [{
+            attachments: MedicalReport ? [{
                 filename: MedicalReport.name,
                 content: Buffer.from(await MedicalReport.arrayBuffer()),
             }] : [],
@@ -61,7 +61,7 @@ export async function POST(request) {
             subject: "Thank You for contacting Dr. Devavrat Arya",
             html: `<html>
             <body>
-              <h2>Hey ${Fname}!</h2>
+              <h2>Hey ${fullname}!</h2>
               <p>Thank you for reaching out to Dr. Devavrat Arya. Your query has been noted, and our team will contact you at the earliest.</p>
             </body>
            </html>`,
@@ -69,6 +69,7 @@ export async function POST(request) {
 
         // Send Email to User
         await transporter.sendMail(mailOptionsUser);
+        console.log(mailOptionsUser)
 
         return NextResponse.json({
             message: "Message Sent",

@@ -1,94 +1,66 @@
-import React from 'react'
-import Image from "next/image";
+import React from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
-import { IoMailOpenOutline } from "react-icons/io5";
-import { FiPhoneCall } from "react-icons/fi";
-import { FaInstagram } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
-import { FaPinterest } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
-import { FaYoutube } from "react-icons/fa";
+import { IoMailOpenOutline } from 'react-icons/io5';
+import { FiPhoneCall } from 'react-icons/fi';
+import { FaInstagram, FaFacebook, FaPinterest, FaSquareXTwitter, FaYoutube } from 'react-icons/fa6';
+
 const Top = () => {
     return (
-        <div className='container mx-auto grid grid-cols-12 mt-5 items-center'>
-            <div className="lg:w-[300px] w-[200px] lg:col-start-2 col-start-1 lg:col-span-2 col-span-1 ">
-                <Link
-                    href="/"
-                    className={`header-logo block lg:ml-0 ml-2 mt-3 lg:my-3`}
-                >
+        <div className='container mx-auto px-6 py-4 flex flex-col lg:flex-row items-center justify-between gap-4'>
+            {/* Logo Section */}
+            <div className="flex justify-center lg:justify-start w-full lg:w-auto">
+                <Link href="/" className="block">
                     <Image
                         src="/logo/logo_nonbg.png"
                         alt="logo"
-                        width={400}
-                        height={500}
-                        className="lg:w-[350px] lg:h-[100px]"
+                        width={250}
+                        height={80}
+                        className="w-[180px] sm:w-[200px] md:w-[220px] lg:w-[250px]"
                     />
                 </Link>
             </div>
 
-            <div className='col-start-5 col-span-2 flex'>
-
-                <div className='flex gap-4 mt-3'>
-                    <div className='flex gap-2 mt-3'>
-                        <span className='text-4xl text-[#fa3e93]'><IoMailOpenOutline /></span>
-                        <span><Link href="">drramkinkar@gmail.com info@drramkinkar.com</Link></span>
-                    </div>
-                    <div className='border-r-2 h-20 border-[#fa3e93]'></div>
+            {/* Contact Info */}
+            <div className='hidden md:flex flex-col lg:flex-row justify-center lg:justify-between items-center text-center lg:text-left gap-4'>
+                {/* Email */}
+                <div className='flex items-center gap-2'>
+                    <IoMailOpenOutline className='text-2xl lg:text-3xl text-[#fa3e93]' />
+                    <span className='text-xs sm:text-sm lg:text-base'>
+                        <Link href="mailto:drdevavratarya@gmail.com" className="hover:text-[#fa3e93]">drdevavratarya@gmail.com</Link>
+                    </span>
                 </div>
 
-                <div className='flex px-2 mt-3'>
-                    <div className='flex gap-2 mt-4'>
-                        <span><FiPhoneCall className='text-4xl text-[#fa3e93]' /></span>
-                        <span><Link href="">+91-9599533443</Link></span>
-                    </div>
-                    <div className='border-r-2 h-20 border-[#fa3e93] p-1'></div>
-                </div>
+                {/* Vertical Divider */}
+                <div className='hidden lg:block border-r-2 h-10 border-[#fa3e93]'></div>
 
-                <div className="flex mt-6 gap-4">
-                    <Link
-                        href="#"
-                        target="_blank"
-                    >
-                        <div className='bg-[#fa3e93] p-2 rounded-full text-white hover:bg-black'>
-                            <FaInstagram className='text-3xl' />
-                        </div>
-                    </Link>
-                    <Link
-                        href="#"
-                        target="_blank"
-                    >
-                        <div className='bg-[#fa3e93] p-2 rounded-full text-white hover:bg-black'>
-                            <FaFacebook className='text-3xl' />
-                        </div>
-                    </Link>
-                    <Link
-                        href="#"
-                        target="_blank"
-                    >
-                        <div className='bg-[#fa3e93] p-2 rounded-full text-white hover:bg-black'>
-                            <FaPinterest className='text-3xl' />
-                        </div>
-                    </Link>
-                    <Link
-                        href="#"
-                        target="_blank"
-                    >
-                        <div className='bg-[#fa3e93] p-2 rounded-full text-white hover:bg-black'>
-                            <FaSquareXTwitter className='text-3xl' />
-                        </div>
-                    </Link>
-                    <Link
-                        href="#"
-                        target="_blank"
-                    >
-                        <div className='bg-[#fa3e93] p-2 rounded-full text-white hover:bg-black'>
-                            <FaYoutube className='text-3xl' />
-                        </div>
-                    </Link>
+                {/* Phone */}
+                <div className='flex items-center gap-2'>
+                    <FiPhoneCall className='text-2xl lg:text-3xl text-[#fa3e93]' />
+                    <span className='text-xs sm:text-sm lg:text-base'>
+                        <Link href="tel:+919599533443" className="hover:text-[#fa3e93]">+91-9599533443</Link>
+                    </span>
                 </div>
             </div>
+
+            {/* Social Media Icons */}
+            <div className="flex justify-center lg:justify-end gap-3">
+                {[
+                    { icon: <FaInstagram />, link: '#' },
+                    { icon: <FaFacebook />, link: '#' },
+                    { icon: <FaPinterest />, link: '#' },
+                    { icon: <FaSquareXTwitter />, link: '#' },
+                    { icon: <FaYoutube />, link: '#' }
+                ].map((social, index) => (
+                    <Link key={index} href={social.link} target="_blank">
+                        <div className='bg-[#fa3e93] p-2 rounded-full text-white hover:bg-black transition-all'>
+                            {React.cloneElement(social.icon, { className: 'text-lg sm:text-xl' })}
+                        </div>
+                    </Link>
+                ))}
+            </div>
         </div>
-    )
+    );
 }
 
-export default Top
+export default Top;

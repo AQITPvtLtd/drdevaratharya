@@ -82,7 +82,7 @@ const Header = () => {
                             </button>
                             <nav
                                 id="navbarCollapse"
-                                className={`navbar absolute right-0 z-30 rounded px-6 py-4 duration-300 dark:bg-dark lg:visible lg:static w-full lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${navbarOpen
+                                className={`navbar absolute right-0 z-30 border-2 shadow-2xl bg-[#fa3e93] rounded px-6 py-4 duration-300 dark:bg-dark lg:visible lg:static w-full lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${navbarOpen
                                     ? `visibility ${sticky ? "top-[20%]" : "top-[6%]"
                                     }  opacity-100`
                                     : "invisible top-[120%] opacity-0"
@@ -97,7 +97,7 @@ const Header = () => {
                                                 handleSubSubmenu(-1);
                                             }}
                                             key={index}
-                                            className={`group relative text-center ${usePathName === menuItem.path
+                                            className={`group relative text-center  ${usePathName === menuItem.path
                                                 ? "bg-orange"
                                                 : "text-dark "
                                                 }`}
@@ -106,7 +106,7 @@ const Header = () => {
                                                 <Link
                                                     onClick={handleCloseNavbar}
                                                     href={menuItem.path}
-                                                    className={`flex py-2 px-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-3 `}
+                                                    className={`flex py-2  px-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-3 `}
                                                 >
                                                     <div>{menuItem.title}</div>
                                                 </Link>
@@ -119,7 +119,7 @@ const Header = () => {
                                                         className=" px-2 flex cursor-pointer items-center justify-between py-2 text-base text-dark lg:mr-0 lg:inline-flex lg:px-0 lg:py-3"
                                                     >
                                                         {menuItem.title}
-                                                        <span className="pl-3 ">
+                                                        <span className="pl-3">
                                                             <svg width="25" height="24" viewBox="0 0 25 24">
                                                                 <path
                                                                     fillRule="evenodd"

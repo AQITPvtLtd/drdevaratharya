@@ -17,9 +17,9 @@ const Footer = () => {
                 <div className='lg:col-span-3'>
                     <Image src='/logo/logo_nonbg.png' width={200} height={200} alt='Logo' className='w-52 h-auto' />
                     <div className='mt-5 space-y-2'>
-                        <div className='flex gap-2'><IoLocationOutline className='text-6xl font-bold hover:text-blue-950' /><Link href='https://maps.app.goo.gl/PqUsp3QC2rFygoEHA' className='block hover:text-blue-950 text-sm'>G6C6+RM4 Max Super Speciality Hospital, Saket (Max Saket), Block H, Saket, New Delhi, Delhi 110017</Link></div>
-                        <div className='flex gap-2'><MdOutlineMailOutline className='text-2xl font-bold hover:text-blue-950' /><Link href='#' className='block hover:text-blue-950'>Email</Link></div>
-                        <div className='flex gap-2'><LuPhone className='text-2xl font-bold hover:text-blue-950' /><Link href='tel:+91 97114 00908' className='block hover:text-blue-950'>+91 97114 00908</Link></div>
+                        <div className='flex gap-2'><IoLocationOutline className='text-6xl font-bold hover:text-black' /><Link href='https://maps.app.goo.gl/PqUsp3QC2rFygoEHA' className='block hover:text-black text-sm'>G6C6+RM4 Max Super Speciality Hospital, Saket (Max Saket), Block H, Saket, New Delhi, Delhi 110017</Link></div>
+                        <div className='flex gap-2'><MdOutlineMailOutline className='text-2xl font-bold hover:text-black' /><Link href='#' className='block hover:text-black'>drdevavratarya@gmail.com</Link></div>
+                        <div className='flex gap-2'><LuPhone className='text-2xl font-bold hover:text-black' /><Link href='tel:+91 97114 00908' className='block hover:text-black'>+91 97114 00908</Link></div>
                     </div>
                     <div className="flex flex-wrap gap-4 text-3xl md:text-3xl mt-4">
                         <Link
@@ -74,22 +74,22 @@ const Footer = () => {
                 <div className='lg:col-start-9 lg:col-span-2 '>
                     <h3 className='font-semibold text-xl md:text-2xl lg:mt-1 mt-5'>Useful Links</h3>
                     <ul className='mt-5 space-y-2 text-sm md:text-base'>
-                        <li><Link href='#' className='hover:text-blue-950'>About Us</Link></li>
-                        <li><Link href='#' className='hover:text-blue-950'>Treatments</Link></li>
-                        <li><Link href='#' className='hover:text-blue-950'>Type of Cancer</Link></li>
-                        <li><Link href='#' className='hover:text-blue-950'>Blogs</Link></li>
-                        <li><Link href='#' className='hover:text-blue-950'>Media</Link></li>
-                        <li><Link href='#' className='hover:text-blue-950'>Contact</Link></li>
+                        <li><Link href='#' className='hover:text-black'>About Us</Link></li>
+                        <li><Link href='#' className='hover:text-black'>Treatments</Link></li>
+                        <li><Link href='#' className='hover:text-black'>Type of Cancer</Link></li>
+                        <li><Link href='#' className='hover:text-black'>Blogs</Link></li>
+                        <li><Link href='#' className='hover:text-black'>Media</Link></li>
+                        <li><Link href='#' className='hover:text-black'>Contact</Link></li>
                     </ul>
                 </div>
                 <div className='lg:col-span-2'>
                     <h3 className='font-semibold text-xl md:text-2xl lg:mt-1 mt-5'>Treatments</h3>
                     <ul className='mt-5 space-y-2 text-sm md:text-base'>
-                        <li><Link href='#' className='hover:text-blue-950'>Hemato Oncology</Link></li>
-                        <li><Link href='#' className='hover:text-blue-950'>Gynecologic Oncology</Link></li>
-                        <li><Link href='#' className='hover:text-blue-950'>Geriatric Oncology</Link></li>
-                        <li><Link href='#' className='hover:text-blue-950'>Radiation Oncology</Link></li>
-                        <li><Link href='#' className='hover:text-blue-950'>Surgical Oncology</Link></li>
+                        <li><Link href='#' className='hover:text-black'>Hemato Oncology</Link></li>
+                        <li><Link href='#' className='hover:text-black'>Gynecologic Oncology</Link></li>
+                        <li><Link href='#' className='hover:text-black'>Geriatric Oncology</Link></li>
+                        <li><Link href='#' className='hover:text-black'>Radiation Oncology</Link></li>
+                        <li><Link href='#' className='hover:text-black'>Surgical Oncology</Link></li>
                     </ul>
                 </div>
             </footer>

@@ -73,14 +73,14 @@ const Faq = () => {
                             onClick={() => toggleAccordion(index)}
                             aria-expanded={activeIndex === index}
                         >
-                            <span className="font-semibold text-lg">{item.question}</span>
+                            <span className="font-semibold text-lg text-left w-full">{item.question}</span>
                             <IoMdAdd className={`w-8 h-8 transition-transform ${activeIndex === index ? 'rotate-45' : ''}`} />
                         </button>
                         {activeIndex === index && (
                             <div className="p-5 border-t border-black bg-white">
-                                <p className="mb-2">{item.answer}</p>
+                                <p className="mb-2 text-left">{item.answer}</p>
                                 {item.list && (
-                                    <ul className="list-disc list-inside">
+                                    <ul className="list-disc list-outside text-left px-2">
                                         {item.list.map((point, i) => (
                                             <li key={i}>{point}</li>
                                         ))}
