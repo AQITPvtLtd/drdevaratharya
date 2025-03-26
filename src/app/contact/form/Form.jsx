@@ -96,7 +96,7 @@ const Form = () => {
 
     return (
         <div className="max-w-2xl mx-auto p-6 bg-white shadow-lg rounded-lg">
-            <h1 className="text-3xl font-bold text-[#fa3e93] text-center mb-6">
+            <h1 className="text-3xl font-bold text-[#fa3e93] text-center mb-6"   style={{ fontFamily: "Roboto Slab, serif" }}>
                 Submit Your Query
             </h1>
             <form className="space-y-4" onSubmit={handleSubmit}>

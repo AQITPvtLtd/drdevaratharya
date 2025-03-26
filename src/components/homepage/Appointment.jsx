@@ -8,7 +8,7 @@ const Appointment = () => {
             {/* Form Section */}
             <div className='lg:col-span-6 flex justify-center'>
                 <div className='w-full max-w-lg rounded-lg p-6 md:p-8'>
-                    <h2 className='text-2xl md:text-3xl font-semibold text-gray-800 text-center'>Book an Appointment</h2>
+                    <h2 className='text-2xl md:text-3xl font-semibold text-gray-800 text-center'   style={{ fontFamily: "Roboto Slab, serif" }}>Book an Appointment</h2>
                     <p className='text-gray-600 text-center mb-6'>Fill out the form below to schedule a consultation with us.</p>
                     <Form />
                 </div>

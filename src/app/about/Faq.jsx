@@ -64,7 +64,7 @@ const Faq = () => {
 
     return (
         <div className="max-w-6xl mx-auto px-5 py-10">
-            <h1 className="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h1>
+            <h1 className="text-3xl font-bold text-center mb-8"   style={{ fontFamily: "Roboto Slab, serif" }}>Frequently Asked Questions</h1>
             <div>
                 {faqData.map((item, index) => (
                     <div key={index} className="border border-black mb-4 rounded-lg overflow-hidden">

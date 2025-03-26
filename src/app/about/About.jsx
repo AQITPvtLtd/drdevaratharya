@@ -23,16 +23,16 @@ const About = () => {
                         <div className="bg-gray-400 p-4">
                             <div className="bg-white p-4">
                                 <div className="bg-gray-400 p-3 lg:p-7">
-                                    <h2 className="text-2xl lg:text-3xl font-semibold mt-3 text-black">
+                                    <h2 className="text-2xl lg:text-3xl font-semibold mt-3 text-black"   style={{ fontFamily: "Roboto Slab, serif" }}>
                                         Dr. Devavrat Arya
                                     </h2>
 
-                                    <h3 className="font-bold text-2xl lg:text-4xl text-black">
+                                    <h3 className="font-bold text-2xl lg:text-2xl text-black"   style={{ fontFamily: "Roboto Slab, serif" }}>
                                         Senior Director
                                     </h3>
                                     <div className='flex gap-2'>
                                         <Image src="/logo/max.png" height={45} width={40} className="h-[35px] w-[35px] mt-4" alt="Max Logo" />
-                                        <h2 className="text-2xl lg:text-3xl font-semibold mt-3 text-gray-900">
+                                        <h2 className="text-2xl lg:text-3xl font-semibold mt-3 text-gray-900" style={{ fontFamily: "Roboto Slab, serif" }}>
                                             Max Super Speciality Hospital
                                         </h2>
                                     </div>

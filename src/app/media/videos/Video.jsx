@@ -13,7 +13,7 @@ const Video = () => {
     return (
         <div className='container mx-auto px-4 py-10'>
             {/* Heading */}
-            <p className='text-center text-4xl font-bold text-gray-800 mb-8'>Our Videos</p>
+            <p className='text-center text-4xl font-bold text-gray-800 mb-8' style={{ fontFamily: "Roboto Slab, serif" }}>Our Videos</p>
 
             {/* Video Grid */}
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'>

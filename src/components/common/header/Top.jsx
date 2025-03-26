@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { IoMailOpenOutline } from 'react-icons/io5';
 import { FiPhoneCall } from 'react-icons/fi';
-import { FaInstagram, FaFacebook, FaPinterest, FaSquareXTwitter, FaYoutube } from 'react-icons/fa6';
+import { FaInstagram, FaFacebook, FaLinkedinIn, FaYoutube } from 'react-icons/fa6';
 
 const Top = () => {
     return (
@@ -46,10 +46,10 @@ const Top = () => {
             {/* Social Media Icons */}
             <div className="flex justify-center lg:justify-end gap-3">
                 {[
-                    { icon: <FaInstagram />, link: '#' },
-                    { icon: <FaFacebook />, link: '#' },
-                    { icon: <FaPinterest />, link: '#' },
-                    { icon: <FaSquareXTwitter />, link: '#' },
+
+                    { icon: <FaFacebook />, link: 'https://www.facebook.com/drdevavratarya/' },
+                    { icon: <FaInstagram />, link: 'https://www.instagram.com/drdevavratarya/' },
+                    { icon: <FaLinkedinIn />, link: 'https://www.linkedin.com/in/devavratarya/' },
                     { icon: <FaYoutube />, link: '#' }
                 ].map((social, index) => (
                     <Link key={index} href={social.link} target="_blank">

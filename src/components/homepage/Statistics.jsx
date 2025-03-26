@@ -41,7 +41,7 @@ const ProgressCircle = ({ percentage, title, con }) => {
                     </text>
                 </svg>
             </div>
-            <h3 className="text-xl font-semibold text-gray-800">{title}</h3>
+            <h3 className="text-xl font-semibold text-gray-800"   style={{ fontFamily: "Roboto Slab, serif" }}>{title}</h3>
             <p className="text-sm text-gray-600 max-w-xs">{con}</p>
         </div>
     );

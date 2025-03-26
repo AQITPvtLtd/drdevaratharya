@@ -21,7 +21,7 @@ const Services = () => {
                                     />
                                 </div>
                                 <div className="p-4 text-center flex-grow">
-                                    <h2 className="text-xl font-bold text-black">{item.title}</h2>
+                                    <h2 className="text-xl font-bold text-black"   style={{ fontFamily: "Roboto Slab, serif" }}>{item.title}</h2>
                                 </div>
                                 <div className="px-4 text-center flex-grow">
                                     <h2

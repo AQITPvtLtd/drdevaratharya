@@ -13,7 +13,7 @@ const Explore = () => {
                 {/* Left Section */}
                 <div className='lg:col-span-6'>
                     <span className='bg-[#f8fcf4] px-4 py-2 rounded-md text-sm font-medium'>What We Do</span>
-                    <h2 className='mt-4 font-semibold text-4xl md:text-5xl leading-tight'>Various Forms of Cancer</h2>
+                    <h2 className='mt-4 font-semibold text-4xl md:text-5xl leading-tight'   style={{ fontFamily: "Roboto Slab, serif" }}>Various Forms of Cancer</h2>
                     <p className='mt-4 text-gray-700'>
                         Various cancers affect the body differently, requiring personalized care, early detection, and advanced treatments for better outcomes.
                     </p>

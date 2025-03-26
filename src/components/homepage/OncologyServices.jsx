@@ -39,7 +39,7 @@ const OncologyServices = () => {
 
     return (
         <div className="px-4 relative bg-[#84888933]">
-            <h1 className="text-center font-semibold text-3xl md:text-4xl text-gray-800 py-5">
+            <h1 className="text-center font-semibold text-3xl md:text-4xl text-gray-800 py-5" style={{ fontFamily: "Roboto Slab, serif" }}>
                 We Deliver High-Quality Oncology Services
             </h1>
 
@@ -58,7 +58,7 @@ const OncologyServices = () => {
                                     />
                                 </div>
                                 <div className="p-4 text-center flex-grow">
-                                    <h2 className="text-xl font-bold text-black">{item.title}</h2>
+                                    <h2 className="text-xl font-bold text-black" style={{ fontFamily: "Roboto Slab, serif" }}>{item.title}</h2>
                                 </div>
                                 <div className="px-4 text-center flex-grow">
                                     <h2

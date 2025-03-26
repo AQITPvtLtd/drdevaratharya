@@ -81,7 +81,7 @@ const menuData = [
     {
         id: 5,
         title: "Blogs",
-        path: "/",
+        path: "/blogs",
         newTab: false
     },
     {
@@ -92,7 +92,7 @@ const menuData = [
             {
                 id: 61,
                 title: "Photo Gallery",
-                path: "",
+                path: "/media/gallery",
                 newTab: false
             },
             {

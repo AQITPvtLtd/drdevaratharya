@@ -15,7 +15,7 @@ const VisionAndmission = () => {
                         className="rounded-full"
                     />
                 </div>
-                <h2 className="text-2xl font-bold text-[#ef1a76] uppercase">Our Mission</h2>
+                <h2 className="text-2xl font-bold text-[#ef1a76] uppercase"   style={{ fontFamily: "Roboto Slab, serif" }}>Our Mission</h2>
                 <p className="text-gray-600 mt-2 leading-relaxed px-4 md:px-0">
                     Our mission is to provide compassionate and effective cancer care. We focus on personalized treatment plans,
                     advanced medical therapies, and a patient-first approach to ensure the best possible results. Through continuous learning
@@ -34,7 +34,7 @@ const VisionAndmission = () => {
                         className="rounded-full"
                     />
                 </div>
-                <h2 className="text-2xl font-bold text-[#00aaff] uppercase">Our Vision</h2>
+                <h2 className="text-2xl font-bold text-[#00aaff] uppercase"   style={{ fontFamily: "Roboto Slab, serif" }}>Our Vision</h2>
                 <p className="text-gray-600 mt-2 leading-relaxed px-4 md:px-0">
                     Our vision is to provide top-quality cancer care with advanced treatments and a patient-first approach. We strive to bring hope
                     and healing by combining medical expertise, innovation, and compassionate support. Our goal is to make effective cancer treatment
