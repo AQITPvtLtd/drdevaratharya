@@ -3,7 +3,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import menuData from "./menuData";
-import Top from "./Top";
 
 
 const Header = () => {
@@ -49,7 +48,7 @@ const Header = () => {
     };
     return (
         <div>
-            <Top />
+           
             <div
                 className={`overflow-x-clip bg-white header left-0 z-40 top-0 w-full items-center font-semibold ${sticky
                     ? "fixed bg-[#e81d77] !bg-opacity-80 shadow-sticky backdrop-blur-sm transition"
