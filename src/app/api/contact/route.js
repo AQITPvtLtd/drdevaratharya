@@ -1,7 +1,8 @@
-import { NextResponse } from "next/server"
+import { NextResponse } from "next/server";
 import { v4 as uuid } from "uuid";
-import pool from "@/helper/db"
-import nodemailer from 'nodemailer'
+import pool from "@/helper/db";
+import nodemailer from "nodemailer";
+
 export async function POST(request) {
     try {
         const formData = await request.formData();
@@ -14,24 +15,24 @@ export async function POST(request) {
 
         const unique_id = uuid();
 
-        // Database Insert Query
-        await pool.query(
-            "INSERT INTO Contact (date,id ,fullname, phone, email, location, message, MedicalReport) VALUES(NOW(), ?,?,?,?,?,?,?)",
+        // ✅ Use promise-based pool.query()
+        await pool.execute(
+            "INSERT INTO Contact (date, id, fullname, phone, email, location, message, MedicalReport) VALUES(NOW(), ?,?,?,?,?,?,?)",
             [unique_id, fullname, phone, email, location, message, MedicalReport.name]
-        )
+        );
 
-        // Nodemailer Transporter
+        // ✅ Nodemailer Transporter
         const transporter = nodemailer.createTransport({
             service: "gmail",
             host: "smtp.gmail.com",
             secure: true,
             auth: {
                 user: process.env.MY_EMAIL,
-                pass: process.env.MY_PASSWORD
+                pass: process.env.MY_PASSWORD,
             },
         });
 
-        // Admin Email with Attachment
+        // ✅ Admin Email with Attachment
         const mailOptionsAdmin = {
             from: process.env.MY_EMAIL,
             to: process.env.MY_EMAIL,
@@ -44,17 +45,20 @@ export async function POST(request) {
                 <p>${message}</p>
               </body>
             </html>`,
-
-            attachments: MedicalReport ? [{
-                filename: MedicalReport.name,
-                content: Buffer.from(await MedicalReport.arrayBuffer()),
-            }] : [],
+            attachments: MedicalReport
+                ? [
+                    {
+                        filename: MedicalReport.name,
+                        content: Buffer.from(await MedicalReport.arrayBuffer()),
+                    },
+                ]
+                : [],
         };
 
-        // Send Email to Admin
+        // ✅ Send Email to Admin
         await transporter.sendMail(mailOptionsAdmin);
 
-        // User Confirmation Email
+        // ✅ User Confirmation Email
         const mailOptionsUser = {
             from: process.env.MY_EMAIL,
             to: email,
@@ -67,19 +71,18 @@ export async function POST(request) {
            </html>`,
         };
 
-        // Send Email to User
+        // ✅ Send Email to User
         await transporter.sendMail(mailOptionsUser);
-        console.log(mailOptionsUser)
 
         return NextResponse.json({
             message: "Message Sent",
             success: true,
         });
     } catch (error) {
-        console.error("Error details:", error)
+        console.error("Error details:", error);
         return NextResponse.json({
             message: "Failed to send query",
             success: false,
-        })
+        });
     }
 }
