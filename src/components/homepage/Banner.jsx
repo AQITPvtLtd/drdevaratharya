@@ -9,7 +9,7 @@ const Banner = () => {
             {/* Background Image */}
             <div className="absolute inset-0">
                 <Image
-                    src="/banner/banner.jpg"
+                    src="/banner/banner1.jpg"
                     alt="Slider Image"
                     layout="fill"
                     objectFit="cover"

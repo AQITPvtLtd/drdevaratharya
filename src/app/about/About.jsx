@@ -40,12 +40,7 @@ const About = () => {
                                     <p className="text-lg text-white">
                                         Dr. Devavrat Arya is a Medical Oncologist in Saket, Delhi and has an experience of 20 years in this field. Dr. Devavrat Arya practices at Max Super Speciality Hospital - Saket East Wing in Saket, Delhi. He completed MBBS from University of Delhi in 2001,DNB - General Medicine from Gujarat University, India in 2006 and DM - Oncology from Gujarat University, India in 2011.
                                     </p>
-
-
-                                    {/* <Link href="/" className="px-4 py-2 mt-4 bg-[#ef1a76] text-white text-lg rounded-lg  text-center transition-all 
-                                           border-2 border-transparent hover:border-[#ef1a76] gap-2 hover:text-black hover:bg-white w-fit flex">
-                                        Contact us <MdOutlineArrowOutward className='mt-1' />
-                                    </Link> */}
+                                
                                 </div>
                             </div>
                         </div>

@@ -3,7 +3,6 @@ import { IoLocationSharp } from "react-icons/io5";
 import { IoCall } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import Link from "next/link";
-import Image from "next/image";
 import Form from './form/Form';
 
 const Contact = () => {

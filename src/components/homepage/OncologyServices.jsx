@@ -61,10 +61,15 @@ const OncologyServices = () => {
                                     <h2 className="text-xl font-bold text-black" style={{ fontFamily: "Roboto Slab, serif" }}>{item.title}</h2>
                                 </div>
                                 <div className="px-4 text-center flex-grow">
-                                    <h2
-                                        className="text-md text-black line-clamp-2"
-                                        dangerouslySetInnerHTML={{ __html: item.content }}
-                                    />
+                                   
+
+                                    <h2 className="text-md text-black line-clamp-2">
+                                        {item.content ? (
+                                            <span dangerouslySetInnerHTML={{ __html: item.content }} />
+                                        ) : (
+                                            "Loading..."
+                                        )}
+                                    </h2>
                                 </div>
 
                                 <div className="p-4">
