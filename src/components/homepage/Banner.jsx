@@ -32,7 +32,7 @@ const Banner = () => {
                     <Link href="/" className="bg-white cursor-pointer hover:text-white text-black rounded-lg px-6 py-3 font-semibold flex items-center gap-2 hover:bg-[#fa3e93] transition-all">
                         Learn More <MdOutlineArrowOutward />
                     </Link>
-                    <button href="/" className="bg-transparent cursor-pointer text-black border-2 border-white rounded-lg px-6 py-3 font-semibold flex items-center gap-2 hover:bg-[#fa3e93] hover:border-[#fa3e93] transition-all">
+                    <button href="/" className="bg-transparent cursor-pointer text-black border-2 border-white rounded-lg px-6 py-3 font-semibold flex items-center gap-2 hover:bg-[#fa3e93] hover:border-[#fa3e93] transition-all hover:text-white">
                         Contact Us <MdOutlineArrowOutward />
                     </button>
                 </div>
