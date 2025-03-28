@@ -65,22 +65,22 @@ const Footer = () => {
                 <div className='lg:col-start-9 lg:col-span-2 '>
                     <h3 className='font-semibold text-xl md:text-2xl lg:mt-1 mt-5' style={{ fontFamily: "Roboto Slab, serif" }}>Useful Links</h3>
                     <ul className='mt-5 space-y-2 text-sm md:text-base'>
-                        <li><Link href='#' className='hover:text-black'>About Us</Link></li>
-                        <li><Link href='#' className='hover:text-black'>Treatments</Link></li>
-                        <li><Link href='#' className='hover:text-black'>Type of Cancer</Link></li>
-                        <li><Link href='#' className='hover:text-black'>Blogs</Link></li>
-                        <li><Link href='#' className='hover:text-black'>Media</Link></li>
-                        <li><Link href='#' className='hover:text-black'>Contact</Link></li>
+                        <li><Link href='/about' className='hover:text-black'>About Us</Link></li>
+                        <li><Link href='/services' className='hover:text-black'>Treatments</Link></li>
+
+                        <li><Link href='/blogs' className='hover:text-black'>Blogs</Link></li>
+                        <li><Link href='/media/gallery' className='hover:text-black'>Photo Gallery</Link></li>
+                        <li><Link href='/contact' className='hover:text-black'>Contact</Link></li>
                     </ul>
                 </div>
                 <div className='lg:col-span-2'>
                     <h3 className='font-semibold text-xl md:text-2xl lg:mt-1 mt-5' style={{ fontFamily: "Roboto Slab, serif" }}>Treatments</h3>
                     <ul className='mt-5 space-y-2 text-sm md:text-base'>
-                        <li><Link href='#' className='hover:text-black'>Hemato Oncology</Link></li>
-                        <li><Link href='#' className='hover:text-black'>Gynecologic Oncology</Link></li>
-                        <li><Link href='#' className='hover:text-black'>Geriatric Oncology</Link></li>
-                        <li><Link href='#' className='hover:text-black'>Radiation Oncology</Link></li>
-                        <li><Link href='#' className='hover:text-black'>Surgical Oncology</Link></li>
+                        <li><Link href='/' className='hover:text-black'>Hemato Oncology</Link></li>
+                        <li><Link href='/' className='hover:text-black'>Gynecologic Oncology</Link></li>
+                        <li><Link href='/' className='hover:text-black'>Geriatric Oncology</Link></li>
+                        <li><Link href='/' className='hover:text-black'>Radiation Oncology</Link></li>
+                        <li><Link href='/' className='hover:text-black'>Surgical Oncology</Link></li>
                     </ul>
                 </div>
             </footer>
