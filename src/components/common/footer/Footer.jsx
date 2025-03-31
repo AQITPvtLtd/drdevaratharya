@@ -11,7 +11,7 @@ import { LuPhone } from "react-icons/lu";
 
 const Footer = () => {
     return (
-        <div className='mt-5 bg-[#fa3e93]'>
+        <div className='bg-[#fa3e93] '>
             <footer className='p-8 text-white grid lg:grid-cols-12 md:grid-cols-2'>
                 <div className='lg:col-span-3'>
                     <Image src='/footer/footerlogo.png' width={200} height={200} alt='Logo' className='w-52 h-auto' />
@@ -76,11 +76,12 @@ const Footer = () => {
                 <div className='lg:col-span-2'>
                     <h3 className='font-semibold text-xl md:text-2xl lg:mt-1 mt-5' style={{ fontFamily: "Roboto Slab, serif" }}>Treatments</h3>
                     <ul className='mt-5 space-y-2 text-sm md:text-base'>
-                        <li><Link href='/' className='hover:text-black'>Hemato Oncology</Link></li>
-                        <li><Link href='/' className='hover:text-black'>Gynecologic Oncology</Link></li>
-                        <li><Link href='/' className='hover:text-black'>Geriatric Oncology</Link></li>
-                        <li><Link href='/' className='hover:text-black'>Radiation Oncology</Link></li>
-                        <li><Link href='/' className='hover:text-black'>Surgical Oncology</Link></li>
+                        <li><Link href='https://aryaoncology.com/services/1' className='hover:text-black'>Chemotherapy</Link></li>
+                        <li><Link href='https://aryaoncology.com/services/2' className='hover:text-black'>Immunotherapy</Link></li>
+                        <li><Link href='https://aryaoncology.com/services/3' className='hover:text-black'>Targeted Therapy</Link></li>
+                        <li><Link href='https://aryaoncology.com/services/4' className='hover:text-black'>Antibody drug conjugates</Link></li>
+                        <li><Link href='https://aryaoncology.com/services/5' className='hover:text-black'>Precision Medicine</Link></li>
+                        <li><Link href='https://aryaoncology.com/services/6' className='hover:text-black'>Molecular oncology</Link></li>
                     </ul>
                 </div>
             </footer>

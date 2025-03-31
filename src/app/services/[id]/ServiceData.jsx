@@ -39,7 +39,7 @@ const ServiceData = ({ id }) => {
 
                     {/* Sidebar Section */}
                     <div className="shadow-2xl sticky top-20 bg-white px-4 py-4 rounded-lg col-span-3 w-auto h-fit mt-10 lg:mt-0">
-                        <h2 className="text-xl font-semibold mb-4" style={{ fontFamily: "Roboto Slab, serif" }}>Other Services</h2>
+                        <h2 className="text-xl font-semibold mb-4 dark:text-black" style={{ fontFamily: "Roboto Slab, serif" }}>Other Services</h2>
                         <ul className="space-y-2">
                             {items.map((a) => (
                                 <li key={a.id}>

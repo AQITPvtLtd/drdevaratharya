@@ -102,7 +102,7 @@ const Form = () => {
             <form className="space-y-4" onSubmit={handleSubmit}>
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
                     <input
-                        className='bg-gray-100 p-3 w-full rounded-md border focus:border-[#fa3e93] focus:ring-1 focus:ring-[#fa3e93] outline-none'
+                        className='bg-gray-100 p-3 w-full rounded-md dark:text-black border focus:border-[#fa3e93] focus:ring-1 focus:ring-[#fa3e93] outline-none'
                         placeholder='Your Name'
                         type='text'
                         id='fullname'
@@ -111,7 +111,7 @@ const Form = () => {
                         onChange={handlechange}
                     />
                     <input
-                        className='bg-gray-100 p-3 w-full rounded-md border focus:border-[#fa3e93] focus:ring-1 focus:ring-[#fa3e93] outline-none'
+                        className='bg-gray-100 p-3 w-full dark:text-black rounded-md border focus:border-[#fa3e93] focus:ring-1 focus:ring-[#fa3e93] outline-none'
                         placeholder='Phone Number'
                         type='text'
                         id='phone'
@@ -120,9 +120,9 @@ const Form = () => {
                         onChange={handlechange}
                     />
                 </div>
-                <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+                <div className='grid grid-cols-1 md:grid-cols-2  gap-4'>
                     <input
-                        className='bg-gray-100 p-3 w-full rounded-md border focus:border-[#fa3e93] focus:ring-1 focus:ring-[#fa3e93] outline-none'
+                        className='bg-gray-100 p-3 w-full dark:text-black rounded-md border focus:border-[#fa3e93] focus:ring-1 focus:ring-[#fa3e93] outline-none'
                         placeholder='Email Address'
                         type='email'
                         id='email'
@@ -131,7 +131,7 @@ const Form = () => {
                         onChange={handlechange}
                     />
                     <input
-                        className='bg-gray-100 p-3 w-full rounded-md border focus:border-[#fa3e93] focus:ring-1 focus:ring-[#fa3e93] outline-none'
+                        className='bg-gray-100 p-3 w-full dark:text-black rounded-md border focus:border-[#fa3e93] focus:ring-1 focus:ring-[#fa3e93] outline-none'
                         placeholder='Enter Your Location'
                         type='location'
                         id='location'
@@ -141,7 +141,7 @@ const Form = () => {
                     />
                 </div>
                 <textarea
-                    className='bg-gray-100 p-3 w-full rounded-md border focus:border-[#fa3e93] focus:ring-1 focus:ring-[#fa3e93] outline-none'
+                    className='bg-gray-100 p-3 w-full dark:text-black rounded-md border focus:border-[#fa3e93] focus:ring-1 focus:ring-[#fa3e93] outline-none'
                     placeholder='Describe Health Problem...'
                     rows='4'
                     id='message'
@@ -151,7 +151,7 @@ const Form = () => {
                 ></textarea>
 
                 <div>
-                    <label htmlFor="MedicalReport" className="block text-md font-medium mb-2 text-gray-700">
+                    <label htmlFor="MedicalReport" className="block text-md font-medium mb-2 text-gray-700 dark:text-black ">
                         Upload Medical Report (Optional)
                     </label>
                     <input
@@ -160,7 +160,7 @@ const Form = () => {
                         name="MedicalReport"
                         onChange={handleFileChange}
                         accept=".pdf, .doc, .docx, .xls, .xlsx, .txt, .jpg, .png, .jpeg, .avif"
-                        className="border bg-gray-100 border-gray-300 p-3 rounded-md w-full focus:border-[#fa3e93] focus:ring-1 focus:ring-[#fa3e93] outline-none"
+                        className="border bg-gray-100 border-gray-300 p-3 rounded-md w-full focus:border-[#fa3e93] focus:ring-1 focus:ring-[#fa3e93] dark:text-black outline-none"
                     />
                 </div>
 

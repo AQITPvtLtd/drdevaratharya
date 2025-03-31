@@ -22,8 +22,8 @@ const DetailedBlog = ({ id, url }) => {
     const blogDetail = blog?.find((b) => b.id == id && b.url == url);
 
     return (
-        <section className="overflow-hidden pt-10 lg:mx-14 mx-3">
-            <div className="container">
+        <section className="overflow-hidden pt-10 lg:px-14 px-3 dark:bg-white">
+            <div className="container dark:text-black">
                 <div className="-mx-4 flex flex-wrap">
                     <div className="max-w-6xl px-4">
                         <div>

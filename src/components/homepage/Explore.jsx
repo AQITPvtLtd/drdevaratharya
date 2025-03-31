@@ -12,22 +12,22 @@ const Explore = () => {
 
                 {/* Left Section */}
                 <div className='lg:col-span-6'>
-                    <span className='bg-[#f8fcf4] px-4 py-2 rounded-md text-sm font-medium'>What We Do</span>
-                    <h2 className='mt-4 font-semibold text-4xl md:text-5xl leading-tight'   style={{ fontFamily: "Roboto Slab, serif" }}>Various Forms of Cancer</h2>
+                    <span className='bg-[#f8fcf4] px-4 py-2 rounded-md text-sm font-medium dark:text-black'>What We Do</span>
+                    <h2 className='mt-4 font-semibold text-4xl md:text-5xl leading-tight dark:text-black'   style={{ fontFamily: "Roboto Slab, serif" }}>Various Forms of Cancer</h2>
                     <p className='mt-4 text-gray-700'>
                         Various cancers affect the body differently, requiring personalized care, early detection, and advanced treatments for better outcomes.
                     </p>
 
                     {/* Cancer List */}
                     <div className='grid sm:grid-cols-2 gap-4 mt-6'>
-                        <ul className='space-y-3'>
+                        <ul className='space-y-3 dark:text-black'>
                             <li className='flex items-center gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-xl' />Lung Cancer</li>
                             <li className='flex items-center gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-xl' />Cervical Cancer</li>
                             <li className='flex items-center gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-xl' />Prostate Cancer</li>
                             <li className='flex items-center gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-xl' />Mouth and Oral Cancer</li>
                             <li className='flex items-center gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-xl' />Colorectal Cancer</li>
                         </ul>
-                        <ul className='space-y-3'>
+                        <ul className='space-y-3 dark:text-black'>
                             <li className='flex items-center gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-xl' />Blood Cancer</li>
                             <li className='flex items-center gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-xl' />Brain Cancer</li>
                             <li className='flex items-center gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-xl' />Bone Cancer</li>

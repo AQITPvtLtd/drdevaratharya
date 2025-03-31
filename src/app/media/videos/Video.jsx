@@ -11,7 +11,7 @@ const Video = () => {
     ];
 
     return (
-        <div className='container mx-auto px-4 py-10'>
+        <div className='container mx-auto px-4 py-10 dark:bg-white'>
             {/* Heading */}
             <p className='text-center text-4xl font-bold text-gray-800 mb-8' style={{ fontFamily: "Roboto Slab, serif" }}>Our Videos</p>
 

@@ -7,7 +7,7 @@ import { FaInstagram, FaFacebook, FaLinkedinIn } from 'react-icons/fa6';
 
 const Top = () => {
     return (
-        <div className='container mx-auto px-6 py-4 flex flex-col lg:flex-row items-center justify-between gap-4'>
+        <div className='container mx-auto px-6 py-4 flex flex-col lg:flex-row items-center justify-between gap-4 dark:bg-white'>
             {/* Logo Section */}
             <div className="flex justify-center lg:justify-start w-full lg:w-auto">
                 <Link href="/" className="block">
@@ -27,7 +27,7 @@ const Top = () => {
                 <div className='flex items-center gap-2'>
                     <IoMailOpenOutline className='text-2xl lg:text-3xl text-[#fa3e93]' />
                     <span className='text-xs sm:text-sm lg:text-base'>
-                        <Link href="mailto:drdevavratarya@gmail.com" className="hover:text-[#fa3e93]">drdevavratarya@gmail.com</Link>
+                        <Link href="mailto:drdevavratarya@gmail.com" className="hover:text-[#fa3e93] dark:text-black">drdevavratarya@gmail.com</Link>
                     </span>
                 </div>
 
@@ -38,7 +38,7 @@ const Top = () => {
                 <div className='flex items-center gap-2'>
                     <FiPhoneCall className='text-2xl lg:text-3xl text-[#fa3e93]' />
                     <span className='text-xs sm:text-sm lg:text-base'>
-                        <Link href="tel:+919599533443" className="hover:text-[#fa3e93]">+91-9599533443</Link>
+                        <Link href="tel:+919599533443" className="hover:text-[#fa3e93] dark:text-black">+91-9599533443</Link>
                     </span>
                 </div>
             </div>

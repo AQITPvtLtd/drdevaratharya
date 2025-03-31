@@ -3,7 +3,7 @@ import Blog from './Blog'
 
 const page = () => {
     return (
-        <div>
+        <div className='bg-white'>
             <Blog />
         </div>
     )

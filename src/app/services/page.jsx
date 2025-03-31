@@ -3,7 +3,7 @@ import Services from './Services'
 
 const page = () => {
     return (
-        <div>
+        <div className='dark:bg-white'>
             <Services />
         </div>
     )

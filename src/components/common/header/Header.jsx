@@ -48,7 +48,7 @@ const Header = () => {
         setNavbarOpen(false);
     };
     return (
-        <div>
+        <div className="dark:bg-white">
            <Top />
 
             <div
@@ -83,7 +83,7 @@ const Header = () => {
                             <nav
                                 id="navbarCollapse"
                                 className={`navbar absolute right-0 z-30 border-2 shadow-2xl bg-[#fa3e93] rounded px-6 py-4 duration-300 dark:bg-dark lg:visible lg:static w-full lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${navbarOpen
-                                    ? `visibility ${sticky ? "top-[20%]" : "top-[6%]"
+                                    ? `visibility ${sticky ? "top-[100%]" : "top-[20%]"
                                     }  opacity-100`
                                     : "invisible top-[120%] opacity-0"
                                     }`}

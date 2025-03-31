@@ -5,7 +5,7 @@ import Link from 'next/link'
 const Services = () => {
     return (
         <div>
-            <h1 className='text-center font-semibold text-2xl mt-2'>Our Services</h1>
+            <h1 className='text-center font-semibold text-2xl lg:text-3xl dark:text-black pt-5'>Our Services</h1>
             <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 px-5'>
                 {items.map((item) => (
                     <div key={item.id} className="px-2">

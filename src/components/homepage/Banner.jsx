@@ -19,7 +19,7 @@ const Banner = () => {
             </div>
 
             {/* Content Section */}
-            <div className="absolute inset-0 flex flex-col justify-center items-start px-6 sm:px-12 lg:px-20 max-w-3xl space-y-6 text-black">
+            <div className="absolute inset-0 flex flex-col justify-center items-start px-6 sm:px-12 -mt-48 lg:mt-0 lg:px-20 max-w-3xl space-y-6 text-black">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight" style={{ fontFamily: "Roboto Slab, serif" }}>
                     Genuine Treatments <br /> for Your Health.
                 </h1>
@@ -29,12 +29,14 @@ const Banner = () => {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4">
-                    <Link href="/" className="bg-white cursor-pointer hover:text-white text-black rounded-lg px-6 py-3 font-semibold flex items-center gap-2 hover:bg-[#fa3e93] transition-all">
+                    <Link href="/about" className="bg-white cursor-pointer hover:text-white text-black rounded-lg px-6 py-3 font-semibold flex items-center gap-2 hover:bg-[#fa3e93] transition-all">
                         Learn More <MdOutlineArrowOutward />
                     </Link>
-                    <button href="/" className="bg-transparent cursor-pointer text-black border-2 border-white rounded-lg px-6 py-3 font-semibold flex items-center gap-2 hover:bg-[#fa3e93] hover:border-[#fa3e93] transition-all hover:text-white">
-                        Contact Us <MdOutlineArrowOutward />
-                    </button>
+                    <Link href="/contact">
+                        <button href="/contact" className="bg-transparent cursor-pointer text-black border-2 border-white rounded-lg px-6 py-3 font-semibold flex items-center gap-2 hover:bg-[#fa3e93] hover:border-[#fa3e93] transition-all hover:text-white">
+                            Contact Us <MdOutlineArrowOutward />
+                        </button>
+                    </Link>
                 </div>
             </div>
         </div>

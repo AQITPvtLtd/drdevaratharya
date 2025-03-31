@@ -55,9 +55,9 @@ const Content = () => {
     ];
 
     return (
-        <div className="max-w-5xl mx-auto p-6">
+        <div className="max-w-5xl mx-auto lg:p-6 pt-5">
             {/* Buttons Section */}
-            <div className="flex flex-wrap justify-center gap-4 mb-8">
+            <div className="flex flex-wrap justify-center gap-4 lg:mb-8 mb-4">
                 {[
                     "Work Experience",
                     "Education & Training",
@@ -67,7 +67,7 @@ const Content = () => {
                 ].map((category) => (
                     <button
                         key={category}
-                        className={`py-3 px-6 rounded-lg text-base font-semibold transition-all duration-300 cursor-pointer
+                        className={`lg:py-3 lg:px-6 px-3 py-2 rounded-lg text-base font-semibold transition-all duration-300 cursor-pointer
                         ${activeCategory === category
                                 ? "bg-[#ef1a76] text-white shadow-lg scale-105"
                                 : "bg-gray-200 text-gray-800 hover:bg-[#ef1a76] hover:text-white"
@@ -80,7 +80,7 @@ const Content = () => {
             </div>
 
             {/* Content Display */}
-            <div className="bg-white shadow-lg rounded-lg p-6 min-h-[250px]">
+            <div className="bg-white shadow-lg rounded-lg lg:p-6 min-h-[250px]">
                 {AboutContent.filter((item) => item.category === activeCategory).map((item) => (
                     <div key={item.id}>
                         <h2

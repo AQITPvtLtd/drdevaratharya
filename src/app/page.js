@@ -7,7 +7,7 @@ import Faq from "./about/Faq";
 
 export default function Home() {
   return (
-    <div>
+    <div className="dark:bg-white">
 
       <Banner />
       <About />

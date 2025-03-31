@@ -14,7 +14,7 @@ const About = () => {
             src="/about/drdevavrat.png"
             width={500}
             height={500}
-            className="w-full max-w-[400px] md:max-w-[500px] rounded-lg shadow-lg"
+            // className="w-full max-w-[400px] md:max-w-[500px] rounded-lg shadow-lg"
             alt="About Us"
           />
         </div>

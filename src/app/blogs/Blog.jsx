@@ -25,10 +25,10 @@ const Blog = () => {
   }, []);
 
   return (
-    <div className="lg:p-10 overflow-x-clip">
-      <div className="">
-        <h1 className="text-3xl font-bold text-center">Latest Blog</h1>
-        <p className="text-center text-lg">Read our latest blog.</p>
+    <div className="lg:p-10 overflow-x-clip px-4">
+      <div className="pt-5">
+        <h1 className="text-3xl font-bold text-center dark:text-black">Latest Blog</h1>
+        <p className="text-center text-lg dark:text-black">Read our latest blog.</p>
       </div>
 
       {blog.length == 0 ? (
@@ -44,10 +44,10 @@ const Blog = () => {
               src={`/blog/${b.image}`}
               width={1000}
               height={1000}
-              className="lg:w-[200px] h-[150px] object-cover rounded-2xl"
+              className="lg:w-[200px] h-[150px] object-cover rounded-2xl dark:text-black"
               alt={b.title || "blog image"}
             />
-            <div className="p-4">
+            <div className="p-4 dark:text-black">
               <h1 className="text-xl font-bold">{b.title}</h1>
               <div className="flex">
                 <div className="flex my-2">
