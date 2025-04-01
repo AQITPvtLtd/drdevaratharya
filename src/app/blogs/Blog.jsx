@@ -4,7 +4,7 @@ import { getBlog } from "@/services/getBlog";
 import Image from "next/image";
 import Link from "next/link";
 import moment from "moment";
-
+import { SlCalender } from "react-icons/sl";
 const Blog = () => {
   const [blog, setBlog] = useState([]);
 
@@ -26,39 +26,45 @@ const Blog = () => {
 
   return (
     <div className="lg:p-10 overflow-x-clip px-4">
-      <div className="pt-5">
-        <h1 className="text-3xl font-bold text-center dark:text-black">Latest Blog</h1>
-        <p className="text-center text-lg dark:text-black">Read our latest blog.</p>
+      <div className="pt-5 text-center">
+        <h1 className="text-3xl font-bold dark:text-black">Latest Blog</h1>
+        <p className="text-lg dark:text-black">Read our latest blog.</p>
       </div>
 
-      {blog.length == 0 ? (
+      {blog.length === 0 ? (
         <p className="text-center text-gray-500">No blogs available.</p>
       ) : (
-        blog.map((b) => (
-          <Link
-            key={b.id}
-            href={`/blogs/${b.id}/${b.url}`}
-            className="lg:flex shadow-2xl hover:border-b-2 rounded-2xl mb-4 mt-5 hover:scale-105 duration-300 hover:shadow-lg "
-          >
-            <Image
-              src={`/blog/${b.image}`}
-              width={1000}
-              height={1000}
-              className="lg:w-[200px] h-[150px] object-cover rounded-2xl dark:text-black"
-              alt={b.title || "blog image"}
-            />
-            <div className="p-4 dark:text-black">
-              <h1 className="text-xl font-bold">{b.title}</h1>
-              <div className="flex">
-                <div className="flex my-2">
-                  {b.date ? moment(b.date).format("MMMM DD, YYYY") : "Unknown Date"}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+          {blog.map((b) => (
+            <Link
+              key={b.id}
+              href={`/blogs/${b.id}/${b.url}`}
+              className="bg-white shadow-xl rounded-2xl overflow-hidden hover:shadow-2xl transition-transform transform hover:scale-105 duration-300"
+            >
+              <Image
+                src={`/blog/${b.image}`}
+                width={500}
+                height={300}
+                className="w-full h-[200px] object-cover"
+                alt={b.title || "blog image"}
+              />
+              <div className="p-4">
+                <h1 className="text-xl font-bold dark:text-black">{b.title}</h1>
+                <div className="flex items-center gap-2 text-sm text-gray-600 my-2">
+                  <SlCalender />
+                  <span>{b.date ? moment(b.date).format("MMMM DD, YYYY") : "Unknown Date"}</span>
                 </div>
-                <div className="flex my-2 ml-4">Dr Devavrat Arya</div>
+                <p className="text-gray-700 line-clamp-3">{b.short_desc}</p>
+                <Link href={`/blogs/${b.id}/${b.url}`}>
+                  <button className="px-3 py-1.5 mt-3 cursor-pointer bg-[#ef1a76] text-white text-lg rounded-lg block text-center transition-all 
+                                           border-2 border-transparent hover:border-[#ef1a76] hover:text-black hover:bg-white">
+                    Read More
+                  </button>
+                </Link>
               </div>
-              <p>{b.short_desc}</p>
-            </div>
-          </Link>
-        ))
+            </Link>
+          ))}
+        </div>
       )}
     </div>
   );

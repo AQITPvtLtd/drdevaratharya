@@ -4,7 +4,7 @@ import { FaArrowRightFromBracket } from "react-icons/fa6";
 import { data } from '@/data/typeofcancer';
 const Type = () => {
     return (
-        <div>
+        <div className='px-5'>
             <div className="shadow-2xl bg-white px-4 py-4 rounded-lg w-auto h-fit mt-10 lg:mt-0">
                 <h2 className="text-xl font-semibold mb-4 dark:text-black">Types of cancer</h2>
                 <ul className="space-y-2">

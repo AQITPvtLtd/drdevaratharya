@@ -7,18 +7,18 @@ const Blood = () => {
             <div className="mx-auto py-12 bg-gray-50">
                 <div className="flex flex-col items-center">
                     {/* Image Section */}
-                    <div className="w-full max-w-7xl relative">
+                    <div className="w-full max-w-7xl px-5 relative">
                         <Image
-                            src="/typeofcancer/blood.avif"
+                            src="/typeofcancer/blood.png"
                             width={1000}
                             height={500}
-                            className="w-full h-[300px] object-cover rounded-lg shadow-lg"
+                            className="w-full lg:h-[300px] h-[200px] object-cover rounded-lg shadow-lg"
                             alt="Lung Cancer"
                         />
                     </div>
 
                     {/* Content Section */}
-                    <div className="lg:grid grid-cols-1 lg:grid-cols-12 gap-10 mt-10 w-full max-w-6xl">
+                    <div className="lg:grid grid-cols-1 lg:grid-cols-12 gap-10 lg:mt-10 mt-4 w-full max-w-6xl">
                         <div className="relative bg-white px-8 py-10 shadow-lg rounded-2xl col-span-9 lg:-mt-40">
                             <h1 className="font-bold text-3xl md:text-4xl text-[#f01b77] underline mb-6 text-center">
                                 Blood Cancer

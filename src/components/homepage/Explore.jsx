@@ -12,7 +12,6 @@ const Explore = () => {
 
                 {/* Left Section */}
                 <div className='lg:col-span-6'>
-                    <span className='bg-[#f8fcf4] px-4 py-2 rounded-md text-sm font-medium dark:text-black'>What We Do</span>
                     <h2 className='mt-4 font-semibold text-4xl md:text-5xl leading-tight dark:text-black'   style={{ fontFamily: "Roboto Slab, serif" }}>Various Forms of Cancer</h2>
                     <p className='mt-4 text-gray-700'>
                         Various cancers affect the body differently, requiring personalized care, early detection, and advanced treatments for better outcomes.
@@ -36,7 +35,7 @@ const Explore = () => {
                     </div>
 
                     {/* Contact Button */}
-                    <Link href="/" className='mt-6 inline-flex items-center gap-2 bg-[#fa3e93] text-white px-5 py-3 rounded-md text-lg font-semibold border-2 border-[#fa3e93] transition duration-300 hover:bg-white hover:text-[#fa3e93]'>
+                    <Link href="/contact" className='mt-6 inline-flex items-center gap-2 bg-[#fa3e93] text-white px-5 py-3 rounded-md text-lg font-semibold border-2 border-[#fa3e93] transition duration-300 hover:bg-white hover:text-[#fa3e93]'>
                         Contact us <MdOutlineArrowOutward className='text-xl' />
                     </Link>
                 </div>

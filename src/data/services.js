@@ -5,7 +5,6 @@ export const items = [
         title: "Chemotherapy",
         url: "/",
         content: [
-            "<h1><strong>Chemotherapy: A Comprehensive Guide</strong></h1>",
             "<p>Chemotherapy is a widely used treatment for cancer that involves the use of powerful drugs to destroy cancer cells. It is an essential component of cancer treatment and is often combined with surgery, radiation therapy, or targeted therapies. The goal of chemotherapy is to stop or slow the growth of cancer cells, which multiply rapidly.</p>",
             "<h2><strong>How Chemotherapy Works</strong></h2>",
             "<p>Chemotherapy drugs target rapidly dividing cells, which include cancer cells. However, some healthy cells, such as those in the bone marrow, digestive system, and hair follicles, also divide quickly, which is why chemotherapy can cause side effects. The drugs work in various ways:</p>",
@@ -70,7 +69,6 @@ export const items = [
         title: "Immunotherapy",
         url: "/",
         content: [
-            "<h1><strong>Immunotherapy: A Revolutionary Approach to Cancer Treatment</strong></h1>",
             "<p>Immunotherapy is a groundbreaking cancer treatment that enhances the body's immune system to recognize and destroy cancer cells. Unlike chemotherapy and radiation therapy, which directly target cancer cells, immunotherapy helps the immune system identify and attack cancer more effectively. This approach has shown promising results in treating various types of cancer, offering new hope for patients.</p>",
 
             "<h2><strong>How Immunotherapy Works</strong></h2>",
@@ -139,8 +137,6 @@ export const items = [
         title: "Targeted Therapy",
         url: "/",
         content: [
-            "<h1><strong>Targeted Therapy: A Modern and Precise Cancer Treatment</strong></h1>",
-            "<h2><strong>Introduction</strong></h2>",
             "<p>Targeted therapy is an advanced form of cancer treatment that specifically attacks cancer cells while minimizing harm to healthy cells. Unlike traditional chemotherapy, which affects both cancerous and normal cells, targeted therapy focuses on specific molecules and pathways that cancer cells use to grow and survive. This makes the treatment more effective with fewer side effects.</p>",
 
             "<h2><strong>How Targeted Therapy Works</strong></h2>",

@@ -9,7 +9,7 @@ const Banner = () => {
             {/* Background Image */}
             <div className="absolute inset-0">
                 <Image
-                    src="/banner/banner1.jpg"
+                    src="/banner/newbanner.png"
                     alt="Slider Image"
                     layout="fill"
                     objectFit="cover"
@@ -20,12 +20,12 @@ const Banner = () => {
 
             {/* Content Section */}
             <div className="absolute inset-0 flex flex-col justify-center items-start px-6 sm:px-12 -mt-48 lg:mt-0 lg:px-20 max-w-3xl space-y-6 text-black">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight" style={{ fontFamily: "Roboto Slab, serif" }}>
+                <h1 className="text-4xl md:text-5xl font-bold leading-tight" style={{ fontFamily: "Roboto Slab, serif" }}>
                     Genuine Treatments <br /> for Your Health.
                 </h1>
 
                 <p className="text-base sm:text-lg md:text-xl max-w-lg">
-                    Explore our website today and discover how we can partner with you on your journey to better health.
+                    Join hands with us in your health journey. We offer compassionate care and innovative treatments for a healthier tomorrow.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4">

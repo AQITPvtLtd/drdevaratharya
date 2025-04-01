@@ -25,7 +25,7 @@ const Contact = () => {
                                 <div className="ml-4">
                                     <h3 className="text-lg font-semibold dark:text-black">Our Address</h3>
                                     <p className="text-gray-700">
-                                        G6C6+RM4 Max Super Speciality Hospital, Saket (Max Saket), Block H, Saket, New Delhi, Delhi 110017
+                                        Max Super Speciality Hospital, Saket (Max Saket), Block H, Saket, New Delhi, Delhi 110017
                                     </p>
                                 </div>
                             </div>
