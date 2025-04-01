@@ -28,9 +28,8 @@ const ProgressCircle = ({ percentage, title, con }) => {
                         r="40"
                         fill="transparent"
                         strokeDasharray="251.2"
-                        strokeDashoffset={String(251.2 - (251.2 * (percentage ?? 0)) / 100)}
+                        strokeDashoffset={251.2 - (251.2 * percentage) / 100}
                     />
-
                     <text
                         x="50%"
                         y="50%"
