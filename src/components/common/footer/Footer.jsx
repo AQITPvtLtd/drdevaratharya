@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
-// import { FaYoutube } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { LuPhone } from "react-icons/lu";
@@ -33,7 +33,7 @@ const Footer = () => {
                             { icon: <FaFacebook />, link: 'https://www.facebook.com/drdevavratarya/' },
                             { icon: <FaInstagram />, link: 'https://www.instagram.com/drdevavratarya/' },
                             { icon: <FaLinkedinIn />, link: 'https://www.linkedin.com/in/devavratarya/' },
-                            // { icon: <FaYoutube />, link: '' }
+                            { icon: <FaYoutube />, link: 'https://www.youtube.com/@dr.devavratarya254/featured' }
                         ].map((social, index) => (
                             <Link key={index} href={social.link} target="_blank">
                                 <div className='bg-[#fa3e93] p-2 rounded-full text-white hover:bg-black transition-all'>

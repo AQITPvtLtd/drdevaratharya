@@ -8,12 +8,12 @@ import Form from './form/Form';
 const Contact = () => {
     return (
         <div>
-            <p className='text-center text-4xl font-bold text-gray-800 dark:bg-white lg:pt-10' style={{ fontFamily: "Roboto Slab, serif" }}>Contact Us</p>
+            <p className='text-center text-4xl font-bold text-gray-800 dark:bg-white pt-5' style={{ fontFamily: "Roboto Slab, serif" }}>Contact Us</p>
 
             <div className="bg-white flex justify-center px-4">
                 <div className="w-full max-w-6xl flex flex-col md:flex-row gap-8 px-4 md:px-10">
                     {/* Left Section: Address Details */}
-                    <div className="flex flex-col space-y-6 w-full md:w-1/2 pt-14">
+                    <div className="flex flex-col space-y-6 w-full md:w-1/2 pt-8">
                         <Link href="https://maps.app.goo.gl/PqUsp3QC2rFygoEHA">
                             <div className="flex items-start">
                                 <div>

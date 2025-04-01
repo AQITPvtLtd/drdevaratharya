@@ -19,7 +19,7 @@ const About = () => {
           />
         </div>
 
-        <div className='md:col-span-6'>
+        <div className='md:col-span-6 -mt-10 lg:mt-0'>
           <Content />
         </div>
       </div>
