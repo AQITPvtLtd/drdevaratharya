@@ -17,7 +17,7 @@ const Services = () => {
                                         alt="service icon"
                                         width={400}
                                         height={400}
-                                        className="w-full h-full object-cover"
+                                        className="w-full object-cover h-[250px]"
                                     />
                                 </div>
                                 <div className="p-4 text-center flex-grow">

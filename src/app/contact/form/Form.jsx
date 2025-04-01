@@ -109,6 +109,7 @@ const Form = () => {
                         name='fullname'
                         value={formData.fullname}
                         onChange={handlechange}
+                        required
                     />
                     <input
                         className='bg-gray-100 p-3 w-full dark:text-black rounded-md border focus:border-[#fa3e93] focus:ring-1 focus:ring-[#fa3e93] outline-none'
@@ -118,6 +119,7 @@ const Form = () => {
                         name='phone'
                         value={formData.phone}
                         onChange={handlechange}
+                        required
                     />
                 </div>
                 <div className='grid grid-cols-1 md:grid-cols-2  gap-4'>
@@ -129,6 +131,7 @@ const Form = () => {
                         name='email'
                         value={formData.email}
                         onChange={handlechange}
+                        required
                     />
                     <input
                         className='bg-gray-100 p-3 w-full dark:text-black rounded-md border focus:border-[#fa3e93] focus:ring-1 focus:ring-[#fa3e93] outline-none'
@@ -138,6 +141,7 @@ const Form = () => {
                         name='location'
                         value={formData.location}
                         onChange={handlechange}
+                        required
                     />
                 </div>
                 <textarea

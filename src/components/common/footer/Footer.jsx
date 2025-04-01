@@ -14,7 +14,9 @@ const Footer = () => {
         <div className='bg-[#fa3e93] '>
             <footer className='p-8 text-white grid lg:grid-cols-12 md:grid-cols-2'>
                 <div className='lg:col-span-3'>
-                    <Image src='/footer/footerlogo.png' width={200} height={200} alt='Logo' className='w-52 h-auto' />
+                    <Link href="/">
+                        <Image src='/footer/footerlogo.png' width={200} height={200} alt='Logo' className='w-52 h-auto' />
+                    </Link>
                     <div className='mt-5 space-y-2'>
                         <div className='flex gap-2'><LuPhone className='text-2xl font-bold hover:text-black' /><Link href='tel:+91 97114 00908' className='block hover:text-black'>+91 97114 00908</Link></div>
                         <div className='flex gap-2'>
@@ -50,7 +52,7 @@ const Footer = () => {
                     <ul className='mt-5 space-y-2 text-sm md:text-base'>
                         <p>Lajpat Nagar</p>
                         <li className='flex justify-between'><span>Tuesday to Friday </span><span>9:00 AM to 10:00 AM</span></li>
-                        <hr className='border-gray-300' />
+                        {/* <hr className='border-gray-300' /> */}
                     </ul>
 
                     <ul className='mt-5 space-y-2 text-sm md:text-base'>

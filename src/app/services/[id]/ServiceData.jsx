@@ -18,8 +18,8 @@ const ServiceData = ({ id }) => {
                     <Image
                         src={data.image}
                         width={1000}
-                        height={500}
-                        className="w-full h-[300px] object-cover rounded-lg shadow-lg"
+                        height={350}
+                        className="w-full object-cover rounded-lg shadow-lg lg:h-[300px] h-[200px]"
                         alt="Service Image"
                     />
                 </div>
