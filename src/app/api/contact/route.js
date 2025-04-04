@@ -15,10 +15,19 @@ export async function POST(request) {
 
         const unique_id = uuid();
 
-        // ✅ Use promise-based pool.query()
+        let medicalReportBuffer = null;
+        let medicalReportName = null;
+
+        if (MedicalReport) {
+            const arrayBuffer = await MedicalReport.arrayBuffer();
+            medicalReportBuffer = Buffer.from(arrayBuffer); // Convert to Buffer
+            medicalReportName = MedicalReport.name; // Extract filename
+        }
+
+        // ✅ Insert into Database
         await pool.execute(
             "INSERT INTO contact (date, id, fullname, phone, email, location, message, MedicalReport) VALUES(NOW(), ?,?,?,?,?,?,?)",
-            [unique_id, fullname, phone, email, location, message, MedicalReport]
+            [unique_id, fullname, phone, email, location, message, medicalReportName] // Store filename, NOT buffer
         );
 
         // ✅ Nodemailer Transporter
@@ -45,11 +54,11 @@ export async function POST(request) {
                 <p>${message}</p>
               </body>
             </html>`,
-            attachments: MedicalReport
+            attachments: medicalReportBuffer
                 ? [
                     {
-                        filename: MedicalReport,
-                        content: Buffer.from(await MedicalReport.arrayBuffer()),
+                        filename: medicalReportName,
+                        content: medicalReportBuffer, // Attach buffer content
                     },
                 ]
                 : [],
