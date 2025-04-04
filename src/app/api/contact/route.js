@@ -18,7 +18,7 @@ export async function POST(request) {
         // ✅ Use promise-based pool.query()
         await pool.execute(
             "INSERT INTO contact (date, id, fullname, phone, email, location, message, MedicalReport) VALUES(NOW(), ?,?,?,?,?,?,?)",
-            [unique_id, fullname, phone, email, location, message, MedicalReport.name]
+            [unique_id, fullname, phone, email, location, message, MedicalReport]
         );
 
         // ✅ Nodemailer Transporter
@@ -48,7 +48,7 @@ export async function POST(request) {
             attachments: MedicalReport
                 ? [
                     {
-                        filename: MedicalReport.name,
+                        filename: MedicalReport,
                         content: Buffer.from(await MedicalReport.arrayBuffer()),
                     },
                 ]
