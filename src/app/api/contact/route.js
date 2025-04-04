@@ -17,7 +17,7 @@ export async function POST(request) {
 
         // ✅ Use promise-based pool.query()
         await pool.execute(
-            "INSERT INTO Contact (date, id, fullname, phone, email, location, message, MedicalReport) VALUES(NOW(), ?,?,?,?,?,?,?)",
+            "INSERT INTO contact (date, id, fullname, phone, email, location, message, MedicalReport) VALUES(NOW(), ?,?,?,?,?,?,?)",
             [unique_id, fullname, phone, email, location, message, MedicalReport.name]
         );
 
