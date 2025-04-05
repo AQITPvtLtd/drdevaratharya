@@ -96,7 +96,7 @@ const Form = () => {
 
     return (
         <div className="max-w-2xl mx-auto p-6 bg-white shadow-lg rounded-lg">
-            <h1 className="text-3xl font-bold text-[#fa3e93] text-center mb-6"   style={{ fontFamily: "Roboto Slab, serif" }}>
+            <h1 className="text-3xl font-bold text-[#fa3e93] text-center mb-6" style={{ fontFamily: "Roboto Slab, serif" }}>
                 Submit Your Query
             </h1>
             <form className="space-y-4" onSubmit={handleSubmit}>
@@ -170,7 +170,7 @@ const Form = () => {
 
                 <div className="text-center mt-4">
                     {
-                        loading ? (<div className="flex justify-center items-center w-full h-full bg-gray-500 bg-opacity-50 rounded-md fixed top-0 left-0 z-50">
+                        loading ? (<div className="flex justify-center items-center w-full h-full fixed top-0 left-0 z-50 rounded-md" style={{ backgroundColor: "rgba(75, 0, 130, 0.5)" }}>
                             <ClipLoader width="60" height="60" color="#eb5f30" className="animate-spin" />
                         </div>) : (<button className="bg-[#fa3e93] border-2 border-[#fa3e93] font-semibold cursor-pointer px-6 py-3 text-white rounded-xl hover:bg-white hover:text-[#fa3e93] transition duration-300">
                             Send Message
