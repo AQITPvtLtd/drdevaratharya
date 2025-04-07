@@ -1,12 +1,19 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Type from "@/components/common/Type";
+import { motion } from 'framer-motion';
+
 const Lung = () => {
+    const headingVariant = {
+        hidden: { opacity: 0, y: -50 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } }
+    };
     return (
         <div className="mx-auto py-6 bg-gray-50">
             <div className="flex flex-col items-center">
                 {/* Image Section */}
-                <div className="w-full max-w-7xl px-5 relative">
+                <div className="w-full max-w-8xl px-3 relative">
                     <Image
                         src="/typeofcancer/lungcancer_enhanced.png"
                         width={1000}
@@ -17,11 +24,19 @@ const Lung = () => {
                 </div>
 
                 {/* Content Section */}
-                <div className="lg:grid grid-cols-1 lg:grid-cols-12 gap-10 lg:mt-10 mt-4 w-full max-w-6xl">
+                <div className="lg:grid grid-cols-1 lg:grid-cols-12 gap-10 lg:mt-10 mt-4 w-full max-w-7xl">
                     <div className="relative bg-white px-8 py-10 shadow-lg rounded-2xl col-span-9 lg:-mt-40">
-                        <h1 className="font-bold text-3xl md:text-4xl text-[#f01b77] underline mb-6 text-center">
+
+                        <motion.h1
+                            className="font-bold text-3xl md:text-4xl text-[#f01b77] underline mb-6 text-center"
+                            style={{ fontFamily: "Roboto Slab, serif" }}
+                            variants={headingVariant}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: false, amount: 0.3 }}
+                        >
                             Lung Cancer
-                        </h1>
+                        </motion.h1>
 
                         {/* Introduction */}
                         <p className="text-gray-700 leading-relaxed">

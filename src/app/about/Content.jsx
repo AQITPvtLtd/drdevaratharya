@@ -1,8 +1,17 @@
 "use client";
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 const Content = () => {
     const [activeCategory, setActiveCategory] = useState("Work Experience");
+
+    const categories = [
+        "Work Experience",
+        "Education & Training",
+        "Memberships",
+        "Awards",
+        "Speciality Interest",
+    ];
 
     const AboutContent = [
         {
@@ -56,28 +65,39 @@ const Content = () => {
 
     return (
         <div className="max-w-5xl mx-auto lg:p-6 pt-5">
-            {/* Buttons Section */}
-            <div className="flex flex-wrap justify-center gap-4 lg:mb-8 mb-4">
-                {[
-                    "Work Experience",
-                    "Education & Training",
-                    "Memberships",
-                    "Awards",
-                    "Speciality Interest",
-                ].map((category) => (
-                    <button
+            {/* Animated Buttons Section on Scroll */}
+            <motion.div
+                className="flex flex-wrap justify-center gap-4 lg:mb-8 mb-4"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false, amount: 0.5 }} // repeat animation on scroll in
+                variants={{
+                    visible: {
+                        transition: {
+                            staggerChildren: 0.35,
+                        },
+                    },
+                }}
+            >
+
+                {categories.map((category) => (
+                    <motion.button
                         key={category}
+                        variants={{
+                            hidden: { opacity: 0, y: 0 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
                         className={`lg:py-3 lg:px-6 px-3 py-2 rounded-lg text-base font-semibold transition-all duration-300 cursor-pointer
-                        ${activeCategory === category
+                            ${activeCategory === category
                                 ? "bg-[#ef1a76] text-white shadow-lg scale-105"
                                 : "bg-gray-200 text-gray-800 hover:bg-[#ef1a76] hover:text-white"
                             }`}
                         onClick={() => setActiveCategory(category)}
                     >
                         {category}
-                    </button>
+                    </motion.button>
                 ))}
-            </div>
+            </motion.div>
 
             {/* Content Display */}
             <div className="bg-white shadow-lg rounded-lg lg:p-6 min-h-[250px]">

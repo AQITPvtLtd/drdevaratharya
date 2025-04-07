@@ -1,9 +1,12 @@
+"use client";
+
 import React from 'react';
 import VisionAndmission from './Visionandmission';
 import Image from 'next/image';
 import Content from './Content';
 import Statistics from '@/components/homepage/Statistics';
 import Faq from './Faq';
+import { motion } from 'framer-motion';
 
 const About = () => {
     return (
@@ -43,7 +46,14 @@ const About = () => {
                 </div>
             </div>
             <Content />
-            <Statistics />
+            <motion.div
+                initial={{ opacity: 0, y: 80 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: 'easeOut' }}
+                viewport={{ once: false, amount: 0.5 }}
+            >
+                <Statistics />
+            </motion.div>
             <VisionAndmission />
             <Faq />
         </div>

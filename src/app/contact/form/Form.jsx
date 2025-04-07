@@ -176,7 +176,6 @@ const Form = () => {
                             Send Message
                         </button>)
                     }
-
                 </div>
             </form >
         </div >

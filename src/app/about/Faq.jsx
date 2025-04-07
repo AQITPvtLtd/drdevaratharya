@@ -1,6 +1,7 @@
 "use client";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { IoMdAdd } from "react-icons/io";
+import { motion, useInView } from "framer-motion";
 
 const faqData = [
     {
@@ -55,42 +56,71 @@ const faqData = [
     }
 ];
 
+const faqItemVariant = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+};
+
+const FaqItem = ({ itemData, index, activeIndex, setActiveIndex }) => {
+    const ref = useRef(null);
+    const isInView = useInView(ref, {
+        once: false, // 👈 Allow repeated animation
+        margin: "0px 0px -50px 0px",
+    });
+
+    return (
+        <motion.div
+            ref={ref}
+            className="border border-black mb-4 rounded-lg overflow-hidden"
+            variants={{
+                hidden: { opacity: 0, y: 50 },
+                visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+            }}
+            initial="hidden"
+            animate={isInView ? "visible" : "hidden"} // 👈 This line controls animation
+        >
+            <button
+                className="flex justify-between items-center w-full px-5 py-3 font-medium dark:text-black border-black bg-gray-100 hover:bg-gray-200"
+                onClick={() => setActiveIndex(activeIndex === index ? null : index)}
+                aria-expanded={activeIndex === index}
+            >
+                <span className="font-semibold text-lg text-left w-full">{itemData.question}</span>
+                <IoMdAdd className={`w-8 h-8 transition-transform ${activeIndex === index ? 'rotate-45' : ''}`} />
+            </button>
+            {activeIndex === index && (
+                <div className="p-5 border-t border-black bg-white dark:text-black">
+                    <p className="mb-2 text-left">{itemData.answer}</p>
+                    {itemData.list && (
+                        <ul className="list-disc list-outside text-left px-2">
+                            {itemData.list.map((point, i) => (
+                                <li key={i}>{point}</li>
+                            ))}
+                        </ul>
+                    )}
+                </div>
+            )}
+        </motion.div>
+    );
+};
+
 const Faq = () => {
     const [activeIndex, setActiveIndex] = useState(null);
 
-    const toggleAccordion = (index) => {
-        setActiveIndex(activeIndex === index ? null : index);
-    };
-
     return (
         <div className="max-w-6xl mx-auto px-5 py-10">
-            <h1 className="text-3xl font-bold text-center mb-8 dark:text-black"   style={{ fontFamily: "Roboto Slab, serif" }}>Frequently Asked Questions</h1>
-            <div>
-                {faqData.map((item, index) => (
-                    <div key={index} className="border border-black mb-4 rounded-lg overflow-hidden">
-                        <button
-                            className="flex justify-between items-center w-full px-5 py-3 font-medium dark:text-black border-black bg-gray-100 hover:bg-gray-200"
-                            onClick={() => toggleAccordion(index)}
-                            aria-expanded={activeIndex === index}
-                        >
-                            <span className="font-semibold text-lg text-left w-full">{item.question}</span>
-                            <IoMdAdd className={`w-8 h-8 transition-transform ${activeIndex === index ? 'rotate-45' : ''}`} />
-                        </button>
-                        {activeIndex === index && (
-                            <div className="p-5 border-t border-black bg-white dark:text-black">
-                                <p className="mb-2 text-left">{item.answer}</p>
-                                {item.list && (
-                                    <ul className="list-disc list-outside text-left px-2">
-                                        {item.list.map((point, i) => (
-                                            <li key={i}>{point}</li>
-                                        ))}
-                                    </ul>
-                                )}
-                            </div>
-                        )}
-                    </div>
-                ))}
-            </div>
+            <h1 className="text-3xl font-bold text-center mb-8 dark:text-black" style={{ fontFamily: "Roboto Slab, serif" }}>
+                Frequently Asked Questions
+            </h1>
+
+            {faqData.map((item, index) => (
+                <FaqItem
+                    key={index}
+                    itemData={item}
+                    index={index}
+                    activeIndex={activeIndex}
+                    setActiveIndex={setActiveIndex}
+                />
+            ))}
         </div>
     );
 };

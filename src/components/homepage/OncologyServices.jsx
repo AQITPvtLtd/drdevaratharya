@@ -7,6 +7,7 @@ import { GrPrevious, GrNext } from "react-icons/gr";
 import Image from "next/image";
 import Link from "next/link";
 import { items } from "@/data/services";
+import { motion } from "framer-motion";
 
 const OncologyServices = () => {
     const settings = {
@@ -39,9 +40,17 @@ const OncologyServices = () => {
 
     return (
         <div className="px-4 relative bg-[#84888933]">
-            <h1 className="text-center font-semibold text-3xl md:text-4xl text-gray-800 py-5" style={{ fontFamily: "Roboto Slab, serif" }}>
+            <motion.h1
+                className="text-center font-semibold text-3xl md:text-4xl text-gray-800 py-5"
+                style={{ fontFamily: "Roboto Slab, serif" }}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: false, amount: 0.5 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+            >
                 Your Trusted Partner for Advanced Cancer Care
-            </h1>
+            </motion.h1>
+
 
             <div className="max-w-6xl mx-auto relative">
                 <Slider {...settings}>
@@ -61,8 +70,6 @@ const OncologyServices = () => {
                                     <h2 className="text-2xl font-bold text-black" style={{ fontFamily: "Roboto Slab, serif" }}>{item.title}</h2>
                                 </div>
                                 <div className="px-4 text-center flex-grow">
-
-
                                     <h2 className="text-md text-black line-clamp-2">
                                         {item.content ? (
                                             <span dangerouslySetInnerHTML={{ __html: item.content }} />
