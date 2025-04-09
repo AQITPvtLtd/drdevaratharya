@@ -23,7 +23,7 @@ const item = {
         opacity: 1,
         y: 0,
         transition: {
-            duration: 0.6,
+            duration: 0.3,
             ease: 'easeOut'
         }
     }
@@ -75,7 +75,13 @@ const Top = () => {
             </motion.div>
 
             {/* Social Media Icons */}
-            <div className="flex justify-center lg:justify-end gap-3">
+            <motion.div
+                className="flex justify-center lg:justify-end gap-3"
+                variants={container}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: false, amount: 0.2 }}
+            >
                 {[
                     { icon: <FaFacebook />, link: 'https://www.facebook.com/drdevavratarya/' },
                     { icon: <FaInstagram />, link: 'https://www.instagram.com/drdevavratarya/' },
@@ -91,7 +97,7 @@ const Top = () => {
                         </motion.div>
                     </Link>
                 ))}
-            </div>
+            </motion.div>
         </motion.div>
 
     );
