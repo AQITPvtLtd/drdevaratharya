@@ -114,7 +114,7 @@ const Contact = () => {
                     <div className="col-span-12 lg:col-start-2 lg:col-span-10 px-4 lg:px-0">
                         <div className="map-container">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.589153916314!2d77.21169479999999!3d28.5220062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce1ea73f05b49%3A0xb0bed1820b3bf7fc!2sDr%20Devavrat%20Arya!5e0!3m2!1sen!2sin!4v1742875582465!5m2!1sen!2sin"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.4137118192534!2d77.21204!3d28.527282099999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce1100d3bd473%3A0x4828ebc80af15a59!2sDr%20Devavrat%20Arya!5e0!3m2!1sen!2sin!4v1744607830379!5m2!1sen!2sin"
                                 width="100%"
                                 height="450"
                                 style={{ border: 0 }}
@@ -131,7 +131,7 @@ const Contact = () => {
                     <div className="col-span-12 lg:col-start-2 lg:col-span-10 px-4 lg:px-0">
                         <div className="map-container">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.589153916314!2d77.21169479999999!3d28.5220062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce1ea73f05b49%3A0xb0bed1820b3bf7fc!2sDr%20Devavrat%20Arya!5e0!3m2!1sen!2sin!4v1742875582465!5m2!1sen!2sin"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.4137118192534!2d77.21204!3d28.527282099999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce1100d3bd473%3A0x4828ebc80af15a59!2sDr%20Devavrat%20Arya!5e0!3m2!1sen!2sin!4v1744607830379!5m2!1sen!2sin"
                                 width="100%"
                                 height="450"
                                 style={{ border: 0 }}

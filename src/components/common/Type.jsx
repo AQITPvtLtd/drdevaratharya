@@ -42,7 +42,14 @@ const Type = () => {
                         </motion.li>
                     ))}
                 </motion.ul>
-
+                <div className="pt-3">
+                    <Link
+                        href={`/contact`}
+                        className="px-4 py-2 bg-[#ef1a76] text-white text-md rounded-lg block text-center transition-all border-2 border-transparent hover:border-[#ef1a76] hover:text-black hover:bg-white"
+                    >
+                        Book Your Appointment
+                    </Link>
+                </div>
             </div>
         </div>
     )

@@ -36,23 +36,23 @@ const Explore = () => {
                     {/* Cancer List */}
                     <div className='grid sm:grid-cols-2 gap-4 mt-6'>
                         <ul className='space-y-3 dark:text-black'>
-                            <li className='flex items-center gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-xl' />Lung Cancer</li>
-                            <li className='flex items-center gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-xl' />Cervical Cancer</li>
-                            <li className='flex items-center gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-xl' />Prostate Cancer</li>
-                            <li className='flex items-center gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-xl' />Mouth and Oral Cancer</li>
-                            <li className='flex items-center gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-xl' />Colorectal Cancer</li>
+                            <Link href={`/typeofcancer/lung_cancer`} className='flex items-center gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-xl' />Lung Cancer</Link>
+                            <Link href={`/typeofcancer/cervical_cancer`} className='flex items-center gap-2'> <IoCheckmarkCircle className='text-[#fa3e93] text-xl' />Cervical Cancer</Link>
+                            <Link href={`/typeofcancer/prostate_cancer`} className='flex items-center gap-2'> <IoCheckmarkCircle className='text-[#fa3e93] text-xl' />Prostate Cancer</Link>
+                            <Link href={`/typeofcancer/mouth_cancer`} className='flex items-center gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-xl' />Mouth and Oral Cancer</Link>
+                            <Link href={`/typeofcancer/colorectal_cancer`} className='flex items-center gap-2'> <IoCheckmarkCircle className='text-[#fa3e93] text-xl' />Colorectal Cancer</Link>
                         </ul>
                         <ul className='space-y-3 dark:text-black'>
-                            <li className='flex items-center gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-xl' />Blood Cancer</li>
-                            <li className='flex items-center gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-xl' />Brain Cancer</li>
-                            <li className='flex items-center gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-xl' />Bone Cancer</li>
-                            <li className='flex items-center gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-xl' />Breast Cancer</li>
+                            <Link href={`/typeofcancer/blood_cancer`} className='flex items-center gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-xl' />Blood Cancer</Link>
+                            <Link href={`/typeofcancer/brain_cancer`} className='flex items-center gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-xl' />Brain Cancer</Link>
+                            <Link href={`/typeofcancer/bone_cancer`} className='flex items-center gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-xl' />Bone Cancer</Link>
+                            <Link href={`/typeofcancer/breast_cancer`} className='flex items-center gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-xl' />Breast Cancer</Link>
                         </ul>
                     </div>
 
                     {/* Contact Button */}
                     <Link href="/contact" className='mt-6 inline-flex items-center gap-2 bg-[#fa3e93] text-white px-5 py-3 rounded-md text-lg font-semibold border-2 border-[#fa3e93] transition duration-300 hover:bg-white hover:text-[#fa3e93]'>
-                        Contact us <MdOutlineArrowOutward className='text-xl' />
+                        Book Now <MdOutlineArrowOutward className='text-xl' />
                     </Link>
                 </MotionWrapper>
 

@@ -106,7 +106,7 @@ const Header = () => {
                                                 <Link
                                                     onClick={handleCloseNavbar}
                                                     href={menuItem.path}
-                                                    className={`flex py-2  px-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-3 `}
+                                                    className={`flex py-2 px-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-3 `}
                                                 >
                                                     <div>{menuItem.title}</div>
                                                 </Link>
@@ -116,7 +116,7 @@ const Header = () => {
                                                         onClick={() => {
                                                             handleSubmenu(menuItem.id);
                                                         }}
-                                                        className=" px-2 flex cursor-pointer items-center justify-between py-2 text-base text-dark lg:mr-0 lg:inline-flex lg:px-0 lg:py-3"
+                                                        className="px-2 flex cursor-pointer items-center justify-between py-2 text-base text-dark lg:mr-0 lg:inline-flex lg:px-0 lg:py-3"
                                                     >
                                                         {menuItem.title}
                                                         <span className="pl-3">
@@ -131,7 +131,7 @@ const Header = () => {
                                                         </span>
                                                     </p>
                                                     <div
-                                                        className={`submenu  relative text-black bg-white shadow-2xl left-0 top-full lg:ml-0 pl-4 rounded-sm transition-[top] duration-300 lg:absolute lg:top-[102%] lg:w-[250px] lg:p-4 bg-primary lg:shadow-lg ${openIndex == menuItem.id ? "block" : "hidden"
+                                                        className={`submenu relative text-black bg-white shadow-2xl left-0 top-full lg:ml-0 pl-4 rounded-sm transition-[top] duration-300 lg:absolute lg:top-[102%] lg:w-[250px] lg:p-4 bg-primary lg:shadow-lg ${openIndex == menuItem.id ? "block" : "hidden"
                                                             }`}
                                                     >
                                                         {menuItem.submenu.map((submenuItem, index) => (

@@ -106,7 +106,7 @@ const menuData = [
     },
     {
         id: 7,
-        title: "Contact",
+        title: "Book Appointment",
         path: "/contact",
         newTab: false
     },

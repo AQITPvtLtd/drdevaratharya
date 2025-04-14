@@ -29,6 +29,11 @@ export const data = [{
     path: "/typeofcancer/blood_cancer",
 },
 {
+    id: 7,
+    title: "Brain Cancer",
+    path: "/typeofcancer/brain_cancer",
+},
+{
     id: 8,
     title: "Bone Cancer",
     path: "/typeofcancer/bone_cancer",
