@@ -47,7 +47,7 @@ const Photogallery = () => {
             <Image
               src={`/gallery/${photo.path}`}
               alt={`Photo ${photo.id}`}
-              className='w-full h-64 object-cover'
+              className='w-full h-80 object-contain'
               height={350}
               width={350}
             />

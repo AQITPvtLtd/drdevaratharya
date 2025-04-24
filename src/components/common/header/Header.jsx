@@ -60,7 +60,7 @@ const Header = () => {
                 <header className="flex justify-around bg-primary bg-[#fa3e93] text-white">
                     <div className="container flex items-center">
                         <div className="flex items-center w-full justify-between lg:w-auto mx-5"></div>
-                        <div className=" flex items-center w-full justify-center lg:flex-grow">
+                        <div className=" flex items-center w-end justify-end lg:flex-grow">
                             <button
                                 onClick={navbarToggleHandler}
                                 id="navbarToggler"

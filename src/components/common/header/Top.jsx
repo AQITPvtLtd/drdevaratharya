@@ -33,7 +33,7 @@ const item = {
 const Top = () => {
     return (
         <motion.div
-            className='container mx-auto px-6 py-4 flex flex-col lg:flex-row items-center justify-between gap-4 dark:bg-white'
+            className="container mx-auto lg:px-6 px-2 py-4 flex flex-row items-center justify-between gap-4 flex-wrap md:flex-nowrap dark:bg-white"
             variants={container}
             initial="hidden"
             whileInView="show"
@@ -41,14 +41,14 @@ const Top = () => {
         >
 
             {/* Logo Section */}
-            <motion.div className="flex justify-center lg:justify-start w-full lg:w-auto" variants={item}>
+            <motion.div className="flex justify-start w-full sm:w-auto flex-1" variants={item}>
                 <Link href="/" className="block">
                     <Image
                         src="/logo/logo_nonbg.png"
                         alt="logo"
-                        width={250}
-                        height={80}
-                        className="w-[180px] sm:w-[200px] md:w-[220px] lg:w-[250px]"
+                        width={300}
+                        height={120}
+                        className="w-[220px] sm:w-[250px] md:w-[220px] lg:w-[250px]"
                     />
                 </Link>
             </motion.div>
@@ -76,7 +76,7 @@ const Top = () => {
 
             {/* Social Media Icons */}
             <motion.div
-                className="flex justify-center lg:justify-end gap-3"
+                className="flex justify-end flex-1 gap-3 mt-4 sm:mt-0"
                 variants={container}
                 initial="hidden"
                 whileInView="show"
