@@ -58,6 +58,8 @@ const Content = () => {
                 "Lung Cancer",
                 "Head and Neck Cancer",
                 "Bone and Soft Tissue Sarcoma",
+                "Molecular Oncology",
+                "Precision Medicine",
             ],
             category: "Speciality Interest",
         },

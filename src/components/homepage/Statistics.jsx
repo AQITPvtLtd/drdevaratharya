@@ -2,7 +2,7 @@ import React from "react";
 
 const stats = [
     { title: "Total Experience", number: 20, con: "Bringing 20+ years of expertise in personalized cancer treatment." },
-    { title: "Success Case", percentage: 95, con: "Achieving 95% success rate with advanced and personalized cancer treatments." },
+    // { title: "Success Case", percentage: 95, con: "Achieving 95% success rate with advanced and personalized cancer treatments." },
     { title: "Happy Patients", percentage: 98, con: "Ensuring 98% patient satisfaction with compassionate and effective cancer care." },
 ];
 

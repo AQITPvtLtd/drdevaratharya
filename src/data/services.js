@@ -213,7 +213,7 @@ export const items = [
     {
         id: 4,
         image: "/services/img4_enhanced.jpg",
-        title: "Antibody drug conjugates",
+        title: "Antibody Drug Conjugates",
         url: "/",
         content: [
             "<p>Antibody-drug conjugates (ADCs) are an innovative class of targeted cancer therapies that combine the specificity of monoclonal antibodies with the potency of cytotoxic drugs.</p>",
@@ -281,7 +281,7 @@ export const items = [
     {
         id: 6,
         image: "/services/img6_enhanced.jpg",
-        title: "Molecular oncology",
+        title: "Molecular Oncology",
         url: "/",
         content: [
             "<p>Molecular oncology is a branch of medical science that focuses on understanding cancer at the molecular and genetic levels. It studies how genetic mutations, abnormal gene expressions, and molecular pathways contribute to the development, progression, and treatment of cancer. The field has revolutionized cancer diagnosis and treatment, leading to personalized therapies and targeted drug development.</p>",
@@ -312,5 +312,52 @@ export const items = [
         ]
 
     },
+    {
+        id: 7,
+        image: "/services/hormonal.avif",
+        title: "Hormonal Therapy",
+        url: "/",
+        content: [
+            "<p>Hormonal therapy (also known as hormone therapy or endocrine therapy) is a type of treatment that helps manage health conditions related to hormones. Hormones are natural chemicals in the body that control many important functions like growth, mood, and reproduction.</p>",
+            "<p>When there is a hormonal imbalance or when certain diseases like cancer depend on hormones to grow, doctors use hormonal therapy to help control or stop the issue.</p>",
+            "<p><strong>What Are Hormones?</strong></p>",
+            "<p>Hormones are chemical messengers made by glands in the body. They travel through the blood and tell different organs how to function. For example, estrogen and progesterone are important hormones for women, while testosterone is more common in men.</p>",
+            "<p>When these hormone levels are too high or too low, it can lead to health problems. Hormonal therapy works by either increasing or decreasing specific hormone levels to bring the body back into balance.</p>",
+            "<p><strong>When is Hormonal Therapy Used?</strong></p>",
+            "<ol><li><strong>Cancer Treatment</strong> Hormonal therapy is commonly used for hormone-sensitive cancers like:</li>",
+            "<li><strong>Breast cancer</strong></li>",
+            "<li><strong>Prostate cancer</strong></li>",
+            "<p>In these cases, cancer cells grow with the help of certain hormones. Hormonal therapy slows down or stops the growth of cancer by blocking the hormones or lowering their levels.</p>",
 
+            "<li><strong>Menopause Symptoms:</strong> Many women experience symptoms like hot flashes, mood swings, and sleep problems during menopause. Hormone Replacement Therapy (HRT) helps manage these symptoms by restoring estrogen and progesterone levels in the body.</li>",
+            "<li><strong>Infertility:</strong> For people trying to have children, hormonal therapy can help regulate ovulation (in women) or improve sperm count (in men). This increases the chances of getting pregnant.</li>",
+            "<li><strong>Gender Transition (Transgender Health)</strong></li>",
+            "<p>Hormonal therapy is an important part of gender-affirming care. It helps transgender individuals align their physical appearance with their gender identity:</p>",
+            "<ul><li>Trans women may take estrogen and anti-androgens.</li>",
+            "<li>Trans men may take testosterone.</li></ul>",
+
+            "<p><strong>Benefits of Hormonal Therapy</strong></p>",
+            "<ul><li><strong>Non-surgical option for many conditions</strong></li>",
+            "<li><strong>Improves quality of life by reducing symptoms</strong></li>",
+            "<li><strong>Helps prevent cancer growth and recurrence</strong></li>",
+            "<li><strong>Supports fertility and gender transition goals</strong></li></ul>",
+
+            "<p><strong>Are There Any Side Effects?</strong></p>",
+            "<p>Yes, hormonal therapy can have some side effects. These may include:</p>",
+            "<ul><li>Fatigue or tiredness</li>",
+            "<li>Mood changes</li>",
+            "<li>Hot flashes</li>",
+            "<li>Weight gain</li>",
+            "<li>Reduced sexual desire</li>",
+            "<li>Bone thinning (especially with long-term use)</li></ul>",
+            "<p>However, not everyone experiences side effects, and many people manage them well with the help of their doctor. Regular check-ups are important during the treatment.</p>",
+
+            "<p><strong>Is Hormonal Therapy Right for You?</strong></p>",
+            "<p>Hormonal therapy can be a helpful and effective treatment for many people. Whether you're dealing with cancer, menopause, infertility, or transitioning your gender, it’s important to talk to a doctor to find out if hormonal therapy is the right choice for you.</p>",
+            "<p>Every person is different, so treatment should always be personalized based on medical history and current health.</p>",
+
+            "<p><strong>Final Thoughts</strong></p>",
+            "<p>Hormonal therapy is changing lives every day. It can improve comfort, manage disease, and bring the body back into balance. If you or someone you know is considering hormonal therapy, speak to a qualified healthcare provider. The right advice can lead to the right results.</p>"
+        ]
+    },
 ]
