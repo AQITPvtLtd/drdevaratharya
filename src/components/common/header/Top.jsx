@@ -69,7 +69,7 @@ const Top = () => {
                 <div className='flex items-center gap-2'>
                     <FiPhoneCall className='text-2xl lg:text-3xl text-[#fa3e93]' />
                     <span className='text-xs sm:text-sm lg:text-base'>
-                        <Link href="tel:+919599533443" className="hover:text-[#fa3e93] dark:text-black">+91-9599533443</Link>
+                        <Link href="tel:+918287508944" className="hover:text-[#fa3e93] dark:text-black">+91-8287508944</Link>
                     </span>
                 </div>
             </motion.div>

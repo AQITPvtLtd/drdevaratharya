@@ -35,12 +35,12 @@ const Contact = () => {
                 </div>
             </Link>
 
-            <Link href="tel:+91 97114 00908">
+            <Link href="tel:+91 8287508944">
                 <div className="flex items-start cursor-pointer">
                     <IoCall className="text-4xl text-white bg-[#fa3e93] p-1 rounded-full" />
                     <div className="ml-4">
                         <h3 className="text-lg font-semibold dark:text-black">Phone Number</h3>
-                        <p className="text-gray-700">+91 97114 00908</p>
+                        <p className="text-gray-700">+91 82875 08944 </p>
                     </div>
                 </div>
             </Link>

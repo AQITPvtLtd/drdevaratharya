@@ -18,7 +18,7 @@ const Footer = () => {
                         <Image src='/footer/footerlogo.png' width={200} height={200} alt='Logo' className='w-52 h-auto' />
                     </Link>
                     <div className='mt-5 space-y-2'>
-                        <div className='flex gap-2'><LuPhone className='text-2xl font-bold hover:text-black' /><Link href='tel:+91 97114 00908' className='block hover:text-black'>+91 97114 00908</Link></div>
+                        <div className='flex gap-2'><LuPhone className='text-2xl font-bold hover:text-black' /><Link href='tel:+91 82875 08944 ' className='block hover:text-black'>+91 82875 08944</Link></div>
                         <div className='flex gap-2'>
                             <div>  <MdOutlineMailOutline className='text-2xl font-bold hover:text-black' /> </div>
                             <Link href='mailto:drdevavratarya@gmail.com' className='block hover:text-black'>drdevavratarya@gmail.com</Link>
