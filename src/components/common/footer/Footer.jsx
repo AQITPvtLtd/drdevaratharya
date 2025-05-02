@@ -25,7 +25,7 @@ const Footer = () => {
                         </div>
                         <div className='flex gap-2'>
                             <div> <IoLocationOutline className='text-2xl font-bold hover:text-black' /></div>
-                            <Link href='https://maps.app.goo.gl/PqUsp3QC2rFygoEHA' className='block hover:text-black text-sm'>Max Super Speciality Hospital, Saket (Max Saket), Block H, Saket, New Delhi, Delhi 110017</Link>
+                            <Link href='https://maps.app.goo.gl/wt3aU7wxYkWQCWE27' target='__blank' className='block hover:text-black text-sm'>Max Super Speciality Hospital, Saket (Max Saket), Block H, Saket, New Delhi, Delhi 110017</Link>
                         </div>
 
                     </div>

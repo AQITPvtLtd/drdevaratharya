@@ -5,17 +5,27 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
+// Parent container animation
+const containerVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+// Each card animation
 const cardVariants = {
-  hidden: { opacity: 0, y: 50 },
-  visible: (i) => ({
+  hidden: { opacity: 0, y: 30 },
+  visible: {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.8,
-      delay: i * 0.4,
+      duration: 0.5,
       ease: "easeOut",
     },
-  }),
+  },
 };
 
 const Services = () => {
@@ -25,20 +35,19 @@ const Services = () => {
         className="text-center font-semibold text-2xl lg:text-3xl dark:text-black pt-5"
         style={{ fontFamily: "Roboto Slab, serif" }}
       >
-        Our Services
+        Our Treatments
       </h1>
 
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 px-5">
-        {items.map((item, index) => (
-          <motion.div
-            key={item.id}
-            className="px-2"
-            variants={cardVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            custom={index}
-          >
+      {/* Parent container with stagger animation */}
+      <motion.div
+        className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 px-5"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        {items.map((item) => (
+          <motion.div key={item.id} className="px-2" variants={cardVariants}>
             <Link href={`services/${item.id}`}>
               <div className="bg-white my-5 h-[420px] md:h-[400px] rounded-lg shadow-lg flex flex-col overflow-hidden">
                 <div className="h-[250px] md:h-[230px] overflow-hidden">
@@ -63,7 +72,9 @@ const Services = () => {
                 <div className="px-4 text-center flex-grow">
                   <h2 className="text-md text-black line-clamp-2">
                     {item.content ? (
-                      <span dangerouslySetInnerHTML={{ __html: item.content }} />
+                      <span
+                        dangerouslySetInnerHTML={{ __html: item.content }}
+                      />
                     ) : (
                       "Loading..."
                     )}
@@ -82,7 +93,7 @@ const Services = () => {
             </Link>
           </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };

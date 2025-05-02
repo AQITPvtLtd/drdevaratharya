@@ -15,14 +15,14 @@ const listContainer = {
     hidden: {},
     visible: {
         transition: {
-            staggerChildren: 0.8
+            staggerChildren: 0.15, // Faster stagger
         }
     }
 };
 
 const listItem = {
-    hidden: { opacity: 0, x: 30 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.3, ease: 'easeOut' } }
+    hidden: { opacity: 0, x: 20 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.3, ease: 'easeOut' } } // Smoother duration
 };
 
 const ServiceData = ({ id }) => {
@@ -76,7 +76,7 @@ const ServiceData = ({ id }) => {
                             variants={listContainer}
                             initial="hidden"
                             whileInView="visible"
-                            viewport={{ once: false, amount: 0.4 }}
+                            viewport={{ once: false, amount: 0.2 }}
                         >
                             {items.map((a) => (
                                 <motion.li key={a.id} variants={listItem}>
