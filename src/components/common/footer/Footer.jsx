@@ -79,12 +79,12 @@ const Footer = () => {
                 <div className='lg:col-span-2'>
                     <h3 className='font-semibold text-xl md:text-2xl lg:mt-1 mt-5' style={{ fontFamily: "Roboto Slab, serif" }}>Treatments</h3>
                     <ul className='mt-5 space-y-2 text-sm md:text-base'>
-                        <li><Link href='https://aryaoncology.com/services/1' className='hover:text-black'>Chemotherapy</Link></li>
-                        <li><Link href='https://aryaoncology.com/services/2' className='hover:text-black'>Immunotherapy</Link></li>
-                        <li><Link href='https://aryaoncology.com/services/3' className='hover:text-black'>Targeted Therapy</Link></li>
-                        <li><Link href='https://aryaoncology.com/services/4' className='hover:text-black'>Antibody drug conjugates</Link></li>
-                        <li><Link href='https://aryaoncology.com/services/5' className='hover:text-black'>Precision Medicine</Link></li>
-                        <li><Link href='https://aryaoncology.com/services/6' className='hover:text-black'>Molecular oncology</Link></li>
+                        <li><Link href='https://www.aryaoncology.com/services/chemotherapy' className='hover:text-black'>Chemotherapy</Link></li>
+                        <li><Link href='https://www.aryaoncology.com/services/immunotherapy' className='hover:text-black'>Immunotherapy</Link></li>
+                        <li><Link href='https://www.aryaoncology.com/services/targeted-therapy' className='hover:text-black'>Targeted Therapy</Link></li>
+                        <li><Link href='https://www.aryaoncology.com/services/antibody-drug-conjugates' className='hover:text-black'>Antibody drug conjugates</Link></li>
+                        <li><Link href='https://www.aryaoncology.com/services/precision-medicine' className='hover:text-black'>Precision Medicine</Link></li>
+                        <li><Link href='https://www.aryaoncology.com/services/molecular-oncology' className='hover:text-black'>Molecular oncology</Link></li>
                     </ul>
                 </div>
             </footer>
