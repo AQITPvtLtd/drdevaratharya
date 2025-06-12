@@ -3,7 +3,7 @@ export const items = [
         id: 1,
         image: "/services/newimg1.avif",
         title: "Chemotherapy",
-        url: "/",
+        url: "chemotherapy",
         content: [
             "<p>Chemotherapy is a widely used treatment for cancer that involves the use of powerful drugs to destroy cancer cells. It is an essential component of cancer treatment and is often combined with surgery, radiation therapy, or targeted therapies. The goal of chemotherapy is to stop or slow the growth of cancer cells, which multiply rapidly.</p>",
             "<h2><strong>How Chemotherapy Works</strong></h2>",
@@ -67,7 +67,7 @@ export const items = [
         id: 2,
         image: "/services/newimg2.jpg",
         title: "Immunotherapy",
-        url: "/",
+        url: "immunotherapy",
         content: [
             "<p>Immunotherapy is a groundbreaking cancer treatment that enhances the body's immune system to recognize and destroy cancer cells. Unlike chemotherapy and radiation therapy, which directly target cancer cells, immunotherapy helps the immune system identify and attack cancer more effectively. This approach has shown promising results in treating various types of cancer, offering new hope for patients.</p>",
 
@@ -135,7 +135,7 @@ export const items = [
         id: 3,
         image: "/services/img3_enhanced.jpg",
         title: "Targeted Therapy",
-        url: "/",
+        url: "targeted-therapy",
         content: [
             "<p>Targeted therapy is an advanced form of cancer treatment that specifically attacks cancer cells while minimizing harm to healthy cells. Unlike traditional chemotherapy, which affects both cancerous and normal cells, targeted therapy focuses on specific molecules and pathways that cancer cells use to grow and survive. This makes the treatment more effective with fewer side effects.</p>",
 
@@ -214,7 +214,7 @@ export const items = [
         id: 4,
         image: "/services/img4_enhanced.jpg",
         title: "Antibody Drug Conjugates",
-        url: "/",
+        url: "antibody-drug-conjugates",
         content: [
             "<p>Antibody-drug conjugates (ADCs) are an innovative class of targeted cancer therapies that combine the specificity of monoclonal antibodies with the potency of cytotoxic drugs.</p>",
             "<p>These engineered molecules selectively target cancer cells, minimizing damage to healthy tissues and reducing side effects compared to conventional chemotherapy.</p>",
@@ -228,10 +228,10 @@ export const items = [
             "<li>Inside the cell, the linker is broken down, releasing the cytotoxic payload.</li>",
             "<li>The drug disrupts vital cellular processes, leading to cancer cell death.</li></ol>",
             "<p><strong>Key Approved ADCs and Their Applications:</strong></p>",
-            "<ul><li><strong>Trastuzumab Emtansine (Kadcyla®):</strong> Targets HER2-positive breast cancer.</li>",
-            "<li><strong>Brentuximab Vedotin (Adcetris®):</strong> Used for Hodgkin’s lymphoma and anaplastic large cell lymphoma.</li>",
-            "<li><strong>Enfortumab Vedotin (Padcev®):</strong> Treats metastatic urothelial carcinoma.</li>",
-            "<li><strong>Sacituzumab Govitecan (Trodelvy®):</strong> Approved for triple-negative breast cancer (TNBC).</li></ul>",
+            "<ul><li><strong>Trastuzumab Emtansine (Kadcyla):</strong> Targets HER2-positive breast cancer.</li>",
+            "<li><strong>Brentuximab Vedotin (Adcetris):</strong> Used for Hodgkin’s lymphoma and anaplastic large cell lymphoma.</li>",
+            "<li><strong>Enfortumab Vedotin (Padcev):</strong> Treats metastatic urothelial carcinoma.</li>",
+            "<li><strong>Sacituzumab Govitecan (Trodelvy):</strong> Approved for triple-negative breast cancer (TNBC).</li></ul>",
             "<p><strong>Advantages of ADCs:</strong></p>",
             "<ul><li>Enhanced precision and reduced toxicity.</li>",
             "<li>Increased efficacy with targeted delivery.</li>",
@@ -248,7 +248,7 @@ export const items = [
         id: 5,
         image: "/services/img5_enhanced.jpg",
         title: "Precision Medicine",
-        url: "/",
+        url: "precision-medicine",
         content: [
             "<p>Precision medicine, also known as personalized medicine, is a revolutionary approach to healthcare that tailors medical treatment to an individual’s genetic profile, lifestyle, and environment. </p>",
             "<p>Antibody-drug conjugates (ADCs) are an innovative class of targeted cancer therapies that combine the specificity of monoclonal antibodies with the potency of cytotoxic drugs. These engineered molecules are designed to selectively target cancer cells, minimizing damage to healthy tissues and reducing side effects compared to conventional chemotherapy.</p>",
@@ -262,10 +262,10 @@ export const items = [
             "<li>Inside the cell, the linker is broken down, releasing the cytotoxic payload.</li>",
             "<li>The drug disrupts vital cellular processes, leading to cancer cell death.</li></ol>",
             "<p><strong>Key Approved ADCs and Their Applications:</strong></p>",
-            "<ul><li><strong>Trastuzumab Emtansine (Kadcyla®):</strong> Targets HER2-positive breast cancer.</li>",
-            "<li><strong>Brentuximab Vedotin (Adcetris®):</strong> Used for Hodgkin’s lymphoma and anaplastic large cell lymphoma.</li>",
-            "<li><strong>Enfortumab Vedotin (Padcev®):</strong> Treats metastatic urothelial carcinoma.</li>",
-            "<li><strong>Sacituzumab Govitecan (Trodelvy®):</strong> Approved for triple-negative breast cancer (TNBC).</li></ul>",
+            "<ul><li><strong>Trastuzumab Emtansine (Kadcyla):</strong> Targets HER2-positive breast cancer.</li>",
+            "<li><strong>Brentuximab Vedotin (Adcetris):</strong> Used for Hodgkin’s lymphoma and anaplastic large cell lymphoma.</li>",
+            "<li><strong>Enfortumab Vedotin (Padcev):</strong> Treats metastatic urothelial carcinoma.</li>",
+            "<li><strong>Sacituzumab Govitecan (Trodelvy):</strong> Approved for triple-negative breast cancer (TNBC).</li></ul>",
             "<p><strong>Advantages of ADCs:</strong></p>",
             "<ul><li>Enhanced precision and reduced toxicity.</li>",
             "<li>Increased efficacy with targeted delivery.</li>",
@@ -282,7 +282,7 @@ export const items = [
         id: 6,
         image: "/services/img6_enhanced.jpg",
         title: "Molecular Oncology",
-        url: "/",
+        url: "molecular-oncology",
         content: [
             "<p>Molecular oncology is a branch of medical science that focuses on understanding cancer at the molecular and genetic levels. It studies how genetic mutations, abnormal gene expressions, and molecular pathways contribute to the development, progression, and treatment of cancer. The field has revolutionized cancer diagnosis and treatment, leading to personalized therapies and targeted drug development.</p>",
             "<p><strong>Understanding Cancer at the Molecular Level</strong></p>",
@@ -316,7 +316,7 @@ export const items = [
         id: 7,
         image: "/services/hormonal.avif",
         title: "Hormonal Therapy",
-        url: "/",
+        url: "hormonal-therapy",
         content: [
             "<p>Hormonal therapy (also known as hormone therapy or endocrine therapy) is a type of treatment that helps manage health conditions related to hormones. Hormones are natural chemicals in the body that control many important functions like growth, mood, and reproduction.</p>",
             "<p>When there is a hormonal imbalance or when certain diseases like cancer depend on hormones to grow, doctors use hormonal therapy to help control or stop the issue.</p>",

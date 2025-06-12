@@ -25,55 +25,55 @@ const menuData = [
             {
                 id: 41,
                 title: "Lung Cancer",
-                path: "/typeofcancer/lung_cancer",
+                path: "/typeofcancer/lung-cancer",
                 newTab: false
             },
             {
                 id: 42,
                 title: "Cervical Cancer",
-                path: "/typeofcancer/cervical_cancer",
+                path: "/typeofcancer/cervical-cancer",
                 newTab: false
             },
             {
                 id: 43,
                 title: "Prostate Cancer",
-                path: "/typeofcancer/prostate_cancer",
+                path: "/typeofcancer/prostate-cancer",
                 newTab: false
             },
             {
                 id: 44,
                 title: "Mouth and Oral Cancer",
-                path: "/typeofcancer/mouth_cancer",
+                path: "/typeofcancer/mouth-cancer",
                 newTab: false
             },
             {
                 id: 45,
                 title: "Colorectal Cancer",
-                path: "/typeofcancer/colorectal_cancer",
+                path: "/typeofcancer/colorectal-cancer",
                 newTab: false
             },
             {
                 id: 46,
                 title: "Blood Cancer",
-                path: "/typeofcancer/blood_cancer",
+                path: "/typeofcancer/blood-cancer",
                 newTab: false
             },
             {
                 id: 47,
                 title: "Brain Cancer",
-                path: "/typeofcancer/brain_cancer",
+                path: "/typeofcancer/brain-cancer",
                 newTab: false
             },
             {
                 id: 48,
                 title: "Bone Cancer",
-                path: "/typeofcancer/bone_cancer",
+                path: "/typeofcancer/bone-cancer",
                 newTab: false
             },
             {
                 id: 49,
                 title: "Breast Cancer",
-                path: "/typeofcancer/breast_cancer",
+                path: "/typeofcancer/breast-cancer",
                 newTab: false
             },
         ]

@@ -25,8 +25,8 @@ const listItem = {
     visible: { opacity: 1, x: 0, transition: { duration: 0.3, ease: 'easeOut' } } // Smoother duration
 };
 
-const ServiceData = ({ id }) => {
-    const data = items.find((a) => a.id == id);
+const ServiceData = ({ url }) => {
+    const data = items.find((a) => a.url == url);
 
     if (!data) {
         return <p className="text-center text-red-500">Service not found!</p>;
@@ -79,8 +79,8 @@ const ServiceData = ({ id }) => {
                             viewport={{ once: false, amount: 0.2 }}
                         >
                             {items.map((a) => (
-                                <motion.li key={a.id} variants={listItem}>
-                                    <Link href={`${a.id}`}>
+                                <motion.li key={a.url} variants={listItem}>
+                                    <Link href={`${a.url}`}>
                                         <span className="cursor-pointer text-blue-500 hover:underline flex gap-2">
                                             <FaArrowRightFromBracket className='mt-1' /> {a.title}
                                         </span>

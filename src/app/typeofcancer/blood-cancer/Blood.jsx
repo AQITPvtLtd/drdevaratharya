@@ -71,7 +71,6 @@ const Blood = () => {
                                 <li><strong>Non-Hodgkin’s Lymphoma (NHL):</strong> A more common type that includes various subtypes, affecting B-cells or T-cells.</li>
                             </ul>
 
-
                             <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-3">
                                 3. Myeloma
                             </h3>

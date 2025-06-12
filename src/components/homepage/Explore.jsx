@@ -36,7 +36,7 @@ const Explore = () => {
                     {/* Cancer List */}
                     <div className='grid sm:grid-cols-2 gap-4 mt-6'>
                         <ul className='space-y-3 dark:text-black'>
-                            <Link href={`/typeofcancer/lung_cancer`} className='flex items-center gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-xl' />Lung Cancer</Link>
+                            <Link href={`/typeofcancer/lung-cancer`} className='flex items-center gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-xl' />Lung Cancer</Link>
                             <Link href={`/typeofcancer/cervical_cancer`} className='flex items-center gap-2'> <IoCheckmarkCircle className='text-[#fa3e93] text-xl' />Cervical Cancer</Link>
                             <Link href={`/typeofcancer/prostate_cancer`} className='flex items-center gap-2'> <IoCheckmarkCircle className='text-[#fa3e93] text-xl' />Prostate Cancer</Link>
                             <Link href={`/typeofcancer/mouth_cancer`} className='flex items-center gap-2'><IoCheckmarkCircle className='text-[#fa3e93] text-xl' />Mouth and Oral Cancer</Link>
