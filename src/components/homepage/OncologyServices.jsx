@@ -48,9 +48,8 @@ const OncologyServices = () => {
                 viewport={{ once: false, amount: 0.5 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
             >
-                Your Trusted Partner for Advanced Cancer Care
+               Our Treatments
             </motion.h1>
-
 
             <div className="max-w-6xl mx-auto relative">
                 <Slider {...settings}>
