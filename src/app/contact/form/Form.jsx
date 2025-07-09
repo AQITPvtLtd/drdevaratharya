@@ -158,14 +158,21 @@ const Form = () => {
                     <label htmlFor="MedicalReport" className="block text-md font-medium mb-2 text-gray-700 dark:text-black ">
                         Upload Medical Report (Optional)
                     </label>
-                    <input
-                        type="file"
-                        id="MedicalReport"
-                        name="MedicalReport"
-                        onChange={handleFileChange}
-                        accept=".pdf, .doc, .docx, .xls, .xlsx, .txt, .jpg, .png, .jpeg, .avif"
-                        className="border bg-gray-100 border-gray-300 p-3 rounded-md w-full focus:border-[#fa3e93] focus:ring-1 focus:ring-[#fa3e93] dark:text-black outline-none"
-                    />
+                    <div className="w-full border bg-gray-100 border-gray-300 rounded-md p-2 focus-within:border-[#fa3e93] focus-within:ring-1 focus-within:ring-[#fa3e93]">
+                        <input
+                            type="file"
+                            id="MedicalReport"
+                            name="MedicalReport"
+                            onChange={handleFileChange}
+                            accept=".pdf, .doc, .docx, .xls, .xlsx, .txt, .jpg, .png, .jpeg, .avif"
+                            className="w-full text-sm text-gray-700 bg-transparent file:mr-4 file:py-2 file:px-4
+               file:rounded-md file:border-0
+               file:text-sm file:font-semibold
+               file:bg-[#fa3e93] file:text-white
+               hover:file:bg-[#e33280] file:cursor-pointer
+               focus:outline-none"
+                        />
+                    </div>
                 </div>
 
                 <div className="text-center mt-4">
