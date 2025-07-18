@@ -97,7 +97,6 @@ const ServiceData = ({ url }) => {
                             </Link>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
