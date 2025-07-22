@@ -31,7 +31,8 @@ const Header = () => {
             setSubOpenIndex(index);
         }
     };
-    const usePathName = usePathname();
+    const pathname = usePathname();
+
     // Sticky Navbar
     const [sticky, setSticky] = useState(false);
     const handleStickyNavbar = () => {
@@ -53,7 +54,7 @@ const Header = () => {
 
             <div
                 className={`overflow-x-clip bg-white header left-0 z-40 top-0 w-full items-center font-semibold ${sticky
-                    ? "fixed bg-[#e81d77] !bg-opacity-80 shadow-sticky backdrop-blur-sm transition"
+                    ? "fixed bg-[#e81d77] shadow-sticky backdrop-blur-sm transition"
                     : ""
                     }`}
             >
@@ -82,13 +83,13 @@ const Header = () => {
                             </button>
                             <nav
                                 id="navbarCollapse"
-                                className={`navbar absolute right-0 z-30 border-2 shadow-2xl bg-[#fa3e93] rounded px-6 py-4 duration-300 dark:bg-dark lg:visible lg:static w-full lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${navbarOpen
+                                className={`navbar absolute right-0 z-30 border-2 shadow-2xl rounded px-6 py-4 duration-300 dark:bg-dark lg:visible lg:static w-full lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${navbarOpen
                                     ? `visibility ${sticky ? "top-[100%]" : "top-[20%]"
                                     }  opacity-100`
                                     : "invisible top-[120%] opacity-0"
                                     }`}
                             >
-                                <ul className="block lg:grid grid-cols-7 gap-2 relative">
+                                <ul className="block lg:grid grid-cols-7 gap-2 relative py-3">
                                     {menuData.map((menuItem, index) => (
                                         <li
                                             onMouseEnter={() => handleSubmenu(menuItem.id)}
@@ -97,10 +98,11 @@ const Header = () => {
                                                 handleSubSubmenu(-1);
                                             }}
                                             key={index}
-                                            className={`group relative text-center  ${usePathName === menuItem.path
-                                                ? "bg-orange"
-                                                : "text-dark "
+                                            className={`group relative text-center transition-all duration-300 ${pathname === menuItem.path
+                                                ? "bg-[#ffb3d1] text-white rounded-md"
+                                                : "text-dark"
                                                 }`}
+
                                         >
                                             {menuItem.path ? (
                                                 <Link
@@ -134,7 +136,7 @@ const Header = () => {
                                                     <div
                                                         className={`submenu relative text-black bg-white shadow-2xl left-0 top-full lg:ml-0 pl-4 rounded-sm transition-[top] duration-300 lg:absolute lg:top-[102%] lg:w-[250px] lg:p-4 bg-primary lg:shadow-lg ${openIndex == menuItem.id ? "block" : "hidden"
                                                             }`}
-                                                        
+
                                                     >
                                                         {menuItem.submenu.map((submenuItem, index) => (
                                                             <div
@@ -163,20 +165,7 @@ const Header = () => {
                                                                             className="rounded py-2 text-sm lg:px-3 flex cursor-pointer justify-between text-dark "
                                                                         >
                                                                             {submenuItem.title}
-                                                                            {/* <span className="pl-3">
-                                                                            <svg
-                                                                                width="25"
-                                                                                height="24"
-                                                                                viewBox="0 0 25 24"
-                                                                            >
-                                                                                <path
-                                                                                    fillRule="evenodd"
-                                                                                    clipRule="evenodd"
-                                                                                    d="M6.29289 8.8427C6.68342 8.45217 7.31658 8.45217 7.70711 8.8427L12 13.1356L16.2929 8.8427C16.6834 8.45217 17.3166 8.45217 17.7071 8.8427C18.0976 9.23322 18.0976 9.86639 17.7071 10.2569L12 15.964L6.29289 10.2569C5.90237 9.86639 5.90237 9.23322 6.29289 8.8427Z"
-                                                                                    fill="currentColor"
-                                                                                />
-                                                                            </svg>
-                                                                        </span> */}
+
                                                                         </p>
 
                                                                     </>

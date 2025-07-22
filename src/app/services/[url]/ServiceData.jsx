@@ -5,6 +5,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { FaArrowRightFromBracket } from "react-icons/fa6";
 import { motion } from 'framer-motion';
+import { usePathname } from "next/navigation";
+
 
 const headingVariant = {
     hidden: { opacity: 0, y: -50 },
@@ -27,6 +29,7 @@ const listItem = {
 
 const ServiceData = ({ url }) => {
     const data = items.find((a) => a.url == url);
+    const pathname = usePathname();
 
     if (!data) {
         return <p className="text-center text-red-500">Service not found!</p>;
@@ -80,13 +83,19 @@ const ServiceData = ({ url }) => {
                         >
                             {items.map((a) => (
                                 <motion.li key={a.url} variants={listItem}>
-                                    <Link href={`${a.url}`}>
-                                        <span className="cursor-pointer text-blue-500 hover:underline flex gap-2">
-                                            <FaArrowRightFromBracket className='mt-1' /> {a.title}
+                                    <Link href={a.url}>
+                                        <span
+                                            className={`cursor-pointer flex gap-2 items-center transition-all ${pathname === a.url
+                                                ? "text-[#ef1a76] font-semibold underline"
+                                                : "text-blue-500 hover:underline"
+                                                }`}
+                                        >
+                                            <FaArrowRightFromBracket className="mt-1" /> {a.title}
                                         </span>
                                     </Link>
                                 </motion.li>
                             ))}
+
                         </motion.ul>
                         <div className="pt-3">
                             <Link
