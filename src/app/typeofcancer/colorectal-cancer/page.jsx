@@ -1,6 +1,21 @@
 import React from 'react'
 import Colorectal from './Colorectal'
-
+export const metadata = {
+    meta_title: "Colorectal Cancer Information & Treatment in New Delhi | Dr. Devavrat Arya | Arya Oncology",
+    meta_desc: "Explore colorectal cancer symptoms, diagnosis, and treatment options with Dr. Devavrat Arya, expert medical oncologist in New Delhi at Arya Oncology.",
+    keyword: [
+        "colorectal cancer new delhi",
+        "colorectal cancer symptoms lajpat nagar",
+        "colorectal cancer diagnosis south delhi",
+        "colorectal cancer treatment new delhi",
+        "chemotherapy colorectal cancer lajpat nagar",
+        "radiation therapy colorectal cancer south delhi",
+        "oncology specialist new delhi",
+        "cancer care lajpat nagar",
+        "tumor treatment south delhi",
+        "Arya Oncology colorectal cancer"
+    ]
+};
 const page = () => {
     return (
         <div>

@@ -61,7 +61,22 @@ export const items = [
             "<h2><strong>Conclusion</strong></h2>",
             "<p>Chemotherapy remains one of the most effective treatments for cancer, despite its side effects. Advances in medical research continue to improve chemotherapy techniques, making them more targeted and reducing adverse effects. Patients undergoing chemotherapy should work closely with their healthcare team to manage symptoms and maintain a good quality of life.</p>",
             "<p>By understanding chemotherapy, patients and caregivers can make informed decisions about treatment and take steps to manage its impact effectively.</p>"
+        ],
+        meta_title: "Personalized Chemotherapy in New Delhi | Dr. Devavrat Arya – Arya Oncology",
+        meta_desc: "Explore personalized chemotherapy in New Delhi with Dr. Devavrat Arya at Arya Oncology. Modern cancer care tailored to each patient’s condition and treatment goals.",
+        keyword: [
+            "chemotherapy in new delhi",
+            "oncology care lajpat nagar",
+            "cancer treatment south delhi",
+            "chemotherapy center saket",
+            "chemo for cancer new delhi",
+            "cancer day care lajpat nagar",
+            "infusion therapy south delhi",
+            "advanced oncology saket",
+            "cancer medications new delhi",
+            "Arya Oncology treatment center"
         ]
+
     },
     {
         id: 2,
@@ -129,7 +144,22 @@ export const items = [
 
             "<h2><strong>Conclusion</strong></h2>",
             "<p>Immunotherapy represents a significant breakthrough in cancer treatment, offering new hope to patients worldwide. By harnessing the power of the immune system, it provides a more targeted and long-lasting approach compared to traditional therapies.</p>"
+        ],
+        meta_title: "Advanced Immunotherapy in New Delhi | Dr. Devavrat Arya – Arya Oncology",
+        meta_desc: "Discover how immunotherapy for cancer in New Delhi is transforming outcomes. Dr. Devavrat Arya at Arya Oncology delivers cutting-edge, immune-based treatments tailored to your diagnosis.",
+        keyword: [
+            "immunotherapy for cancer new delhi",
+            "immune therapy lajpat nagar",
+            "advanced cancer treatment south delhi",
+            "oncology immunotherapy saket",
+            "checkpoint inhibitors new delhi",
+            "cancer immunotherapy lajpat nagar",
+            "personalized treatment south delhi",
+            "immuno-oncology saket",
+            "medical oncologist new delhi",
+            "Arya Oncology immunotherapy"
         ]
+
     },
     {
         id: 3,
@@ -207,8 +237,21 @@ export const items = [
 
             "<h2><strong>Conclusion</strong></h2>",
             "<p>Targeted therapy is a significant breakthrough in cancer treatment, offering a more effective and personalized approach compared to traditional chemotherapy. By focusing on the unique characteristics of cancer cells, it provides better outcomes with fewer side effects. As research continues, targeted therapy is expected to become even more effective, giving new hope to cancer patients worldwide.</p>"
+        ],
+        meta_title: "Targeted Cancer Therapy in New Delhi | Dr. Devavrat Arya | Arya Oncology",
+        meta_desc: "Explore targeted cancer therapy in New Delhi with Dr. Devavrat Arya at Arya Oncology — precision treatments that attack cancer at the molecular level with fewer side effects.",
+        keyword: [
+            "targeted cancer therapy new delhi",
+            "precision oncology lajpat nagar",
+            "molecular cancer treatment south delhi",
+            "targeted therapy for tumors saket",
+            "oncology treatments new delhi",
+            "personalized cancer therapy lajpat nagar",
+            "advanced oncology south delhi",
+            "cancer mutation therapy saket",
+            "medical oncologist new delhi",
+            "Arya Oncology targeted therapy"
         ]
-
     },
     {
         id: 4,
@@ -241,9 +284,22 @@ export const items = [
             "<li>Innovations in linkers, new payloads, and dual-target ADCs are ongoing.</li>",
             "<li>Combination therapies with immunotherapy are being explored.</li></ul>",
             "<p>Antibody-drug conjugates represent a significant advancement in oncology, offering more effective and safer treatment options for cancer patients.</p>"
+        ],
+        meta_title: "Antibody Drug Conjugates in New Delhi | Dr. Devavrat Arya | Arya Oncology",
+        meta_desc: "Learn how antibody drug conjugates in New Delhi are offering targeted, next-gen cancer treatment. Dr. Devavrat Arya uses advanced ADCs at Arya Oncology for selective tumor destruction.",
+        keyword: [
+            "antibody drug conjugates new delhi",
+            "adc therapy lajpat nagar",
+            "targeted antibody treatment south delhi",
+            "cancer therapy adc saket",
+            "advanced oncology care new delhi",
+            "precision cancer drugs lajpat nagar",
+            "tumor-specific treatment south delhi",
+            "oncologist adc therapy saket",
+            "cancer medication new delhi",
+            "Arya Oncology antibody therapies"
         ]
     },
-
     {
         id: 5,
         image: "/services/img5_enhanced.jpg",
@@ -275,6 +331,20 @@ export const items = [
             "<li>Innovations in linkers, new payloads, and dual-target ADCs are ongoing.</li>",
             "<li>Combination therapies with immunotherapy are being explored.</li></ul>",
             "<p>Antibody-drug conjugates represent a significant advancement in oncology, offering more effective and safer treatment options for cancer patients.</p>"
+        ],
+        meta_title: "Get Personalized Cancer Treatment with Precision Medicine | New Delhi – Dr. Devavrat Arya",
+        meta_desc: "Unlock the power of personalized cancer treatment in New Delhi. Dr. Devavrat Arya uses precision medicine at Arya Oncology to match therapies to your unique cancer profile.",
+        keyword: [
+            "personalized cancer treatment new delhi",
+            "precision oncology lajpat nagar",
+            "genetic testing cancer south delhi",
+            "individualized therapy saket",
+            "cancer gene mapping new delhi",
+            "targeted cancer care lajpat nagar",
+            "biomarker-driven treatment south delhi",
+            "advanced cancer solutions saket",
+            "oncology new delhi",
+            "Arya Oncology precision medicine"
         ]
     },
 
@@ -309,8 +379,21 @@ export const items = [
             "<p><strong>Future of Molecular Oncology</strong></p>",
             "<p>The field is advancing with AI, bioinformatics, and gene editing (e.g., CRISPR), improving cancer detection and treatment.</p>",
             "<p>Molecular oncology continues to shape the future of cancer care, making treatments more precise, effective, and personalized.</p>"
+        ],
+        meta_title: "Molecular Oncology Expertise in New Delhi | Dr. Devavrat Arya | Arya Oncology",
+        meta_desc: "Dive into molecular oncology in New Delhi with Dr. Devavrat Arya. Arya Oncology uses gene-level cancer diagnostics and targeted therapies to personalize each treatment plan.",
+        keyword: [
+            "molecular oncology new delhi",
+            "gene-based cancer treatment lajpat nagar",
+            "cancer genomics south delhi",
+            "dna profiling oncology saket",
+            "targeted molecular therapy new delhi",
+            "personalized cancer solutions lajpat nagar",
+            "precision diagnostics south delhi",
+            "biomarker oncology saket",
+            "cancer mutations new delhi",
+            "Arya Oncology molecular care"
         ]
-
     },
     {
         id: 7,
@@ -358,6 +441,20 @@ export const items = [
 
             "<p><strong>Final Thoughts</strong></p>",
             "<p>Hormonal therapy is changing lives every day. It can improve comfort, manage disease, and bring the body back into balance. If you or someone you know is considering hormonal therapy, speak to a qualified healthcare provider. The right advice can lead to the right results.</p>"
+        ],
+        meta_title: "Hormonal Therapy for Cancer in New Delhi | Dr. Devavrat Arya | Arya Oncology",
+        meta_desc: "Hormonal therapy for cancer in New Delhi by Dr. Devavrat Arya for managing hormone-sensitive cancers with personalized care.",
+        keyword: [
+            "hormonal therapy for cancer new delhi",
+            "hormone-sensitive tumors lajpat nagar",
+            "breast cancer therapy south delhi",
+            "prostate cancer saket",
+            "endocrine therapy new delhi",
+            "hormone blockers lajpat nagar",
+            "cancer hormone treatment south delhi",
+            "oncology care saket",
+            "oncologist new delhi",
+            "Arya Oncology hormone therapy"
         ]
     },
 ]

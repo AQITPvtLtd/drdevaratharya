@@ -85,7 +85,6 @@ const DetailedBlog = ({ id, url }) => {
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
