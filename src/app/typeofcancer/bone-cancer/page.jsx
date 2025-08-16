@@ -1,9 +1,9 @@
 import React from 'react'
 import Bone from './Bone'
 export const metadata = {
-    meta_title: "Bone Cancer Information & Treatment in New Delhi | Dr. Devavrat Arya | Arya Oncology",
-    meta_desc: "Discover essential information on bone cancer symptoms, diagnosis, and treatment options with Dr. Devavrat Arya, expert medical oncologist in New Delhi at Arya Oncology.",
-    keyword: [
+    title: "Bone Cancer Information & Treatment in New Delhi | Dr. Devavrat Arya | Arya Oncology",
+    description: "Discover essential information on bone cancer symptoms, diagnosis, and treatment options with Dr. Devavrat Arya, expert medical oncologist in New Delhi at Arya Oncology.",
+    keywords: [
         "bone cancer new delhi",
         "bone tumor treatment lajpat nagar",
         "bone cancer diagnosis south delhi",

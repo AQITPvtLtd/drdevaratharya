@@ -1,9 +1,9 @@
 import React from 'react'
 import Cervical from './Cervical'
 export const metadata = {
-    meta_title: "Cervical Cancer Information & Treatment in New Delhi | Dr. Devavrat Arya | Arya Oncology",
-    meta_desc: "Get comprehensive cervical cancer information, symptoms, causes, and treatment options from Dr. Devavrat Arya, a trusted medical oncologist in New Delhi at Arya Oncology.",
-    keyword: [
+    title: "Cervical Cancer Information & Treatment in New Delhi | Dr. Devavrat Arya | Arya Oncology",
+    description: "Get comprehensive cervical cancer information, symptoms, causes, and treatment options from Dr. Devavrat Arya, a trusted medical oncologist in New Delhi at Arya Oncology.",
+    keywords: [
         "cervical cancer information new delhi",
         "cervical cancer symptoms lajpat nagar",
         "cervical cancer causes south delhi",

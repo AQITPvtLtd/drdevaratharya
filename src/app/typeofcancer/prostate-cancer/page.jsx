@@ -1,9 +1,9 @@
 import React from 'react'
 import Prostate from './Prostate'
 export const metadata = {
-    meta_title: "Prostate Cancer Information & Treatment in New Delhi | Dr. Devavrat Arya | Arya Oncology",
-    meta_desc: "Discover detailed prostate cancer information, symptoms, diagnosis, and treatment options from Dr. Devavrat Arya, a leading medical oncologist in New Delhi at Arya Oncology.",
-    keyword: [
+    title: "Prostate Cancer Information & Treatment in New Delhi | Dr. Devavrat Arya | Arya Oncology",
+    description: "Discover detailed prostate cancer information, symptoms, diagnosis, and treatment options from Dr. Devavrat Arya, a leading medical oncologist in New Delhi at Arya Oncology.",
+    keywords: [
         "prostate cancer information new delhi",
         "prostate cancer symptoms lajpat nagar",
         "prostate cancer diagnosis south delhi",

@@ -1,9 +1,9 @@
 import React from 'react'
 import Breast from './Breast'
 export const metadata = {
-    meta_title: "Breast Cancer Information & Treatment in New Delhi | Dr. Devavrat Arya | Arya Oncology",
-    meta_desc: "Understand breast cancer symptoms, risk factors, diagnosis, and treatment options with Dr. Devavrat Arya, a leading medical oncologist in New Delhi at Arya Oncology.",
-    keyword: [
+    title: "Breast Cancer Information & Treatment in New Delhi | Dr. Devavrat Arya | Arya Oncology",
+    description: "Understand breast cancer symptoms, risk factors, diagnosis, and treatment options with Dr. Devavrat Arya, a leading medical oncologist in New Delhi at Arya Oncology.",
+    keywords: [
         "breast cancer new delhi",
         "breast cancer symptoms lajpat nagar",
         "breast cancer treatment south delhi",

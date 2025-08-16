@@ -1,9 +1,9 @@
 import React from 'react'
 import Mouth from './Mouth'
 export const metadata = {
-    meta_title: "Mouth and Oral Cancer Information & Treatment in New Delhi | Dr. Devavrat Arya | Arya Oncology",
-    meta_desc: "Learn about mouth and oral cancer symptoms, causes, diagnosis, and treatment options from Dr. Devavrat Arya, an experienced medical oncologist in New Delhi at Arya Oncology.",
-    keyword: [
+    title: "Mouth and Oral Cancer Information & Treatment in New Delhi | Dr. Devavrat Arya | Arya Oncology",
+    description: "Learn about mouth and oral cancer symptoms, causes, diagnosis, and treatment options from Dr. Devavrat Arya, an experienced medical oncologist in New Delhi at Arya Oncology.",
+    keywords: [
         "mouth cancer new delhi",
         "oral cancer treatment lajpat nagar",
         "mouth cancer symptoms south delhi",

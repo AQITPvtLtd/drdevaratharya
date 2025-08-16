@@ -1,9 +1,9 @@
 import React from 'react'
 import Lung from './Lung'
 export const metadata = {
-    meta_title: "Lung Cancer Information & Treatment in New Delhi | Dr. Devavrat Arya | Arya Oncology",
-    meta_desc: "Learn about lung cancer symptoms, causes, diagnosis, and treatment options from Dr. Devavrat Arya, a trusted medical oncologist in New Delhi at Arya Oncology.",
-    keyword: [
+    title: "Lung Cancer Information & Treatment in New Delhi | Dr. Devavrat Arya | Arya Oncology",
+    description: "Learn about lung cancer symptoms, causes, diagnosis, and treatment options from Dr. Devavrat Arya, a trusted medical oncologist in New Delhi at Arya Oncology.",
+    keywords: [
         "lung cancer information south delhi",
         "lung cancer symptoms new delhi",
         "lung cancer causes lajpat nagar",

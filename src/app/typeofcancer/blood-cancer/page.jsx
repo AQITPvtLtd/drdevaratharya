@@ -1,9 +1,9 @@
 import React from 'react'
 import Blood from './Blood'
 export const metadata = {
-    meta_title: "Blood Cancer Information & Treatment in New Delhi | Dr. Devavrat Arya | Arya Oncology",
-    meta_desc: "Get detailed information on blood cancer symptoms, diagnosis, and treatment options from Dr. Devavrat Arya, a trusted medical oncologist in New Delhi at Arya Oncology.",
-    keyword: [
+    title: "Blood Cancer Information & Treatment in New Delhi | Dr. Devavrat Arya | Arya Oncology",
+    description: "Get detailed information on blood cancer symptoms, diagnosis, and treatment options from Dr. Devavrat Arya, a trusted medical oncologist in New Delhi at Arya Oncology.",
+    keywords: [
         "blood cancer new delhi",
         "leukemia treatment lajpat nagar",
         "lymphoma diagnosis south delhi",

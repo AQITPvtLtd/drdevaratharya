@@ -1,9 +1,9 @@
 import React from 'react'
 import Video from './Video'
 export const metadata = {
-  meta_title: "Cancer Awareness & Treatment Videos | Dr. Devavrat Arya | New Delhi",
-  meta_desc: "Watch cancer awareness and treatment videos by Dr. Devavrat Arya, leading medical oncologist in New Delhi. Learn about symptoms, therapies, and patient care at Arya Oncology.",
-  keyword: [
+  title: "Cancer Awareness & Treatment Videos | Dr. Devavrat Arya | New Delhi",
+  description: "Watch cancer awareness and treatment videos by Dr. Devavrat Arya, leading medical oncologist in New Delhi. Learn about symptoms, therapies, and patient care at Arya Oncology.",
+  keywords: [
     "cancer awareness videos new delhi",
     "oncology education videos lajpat nagar",
     "cancer treatment videos south delhi",

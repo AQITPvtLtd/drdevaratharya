@@ -48,7 +48,7 @@ const OncologyServices = () => {
                 viewport={{ once: false, amount: 0.5 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
             >
-               Our Treatments
+                Our Treatments
             </motion.h1>
 
             <div className="max-w-6xl mx-auto relative">
@@ -57,24 +57,28 @@ const OncologyServices = () => {
                         <div key={item.id} className="px-2">
                             <div className="bg-white my-5 h-[420px] md:h-[400px] rounded-lg shadow-lg flex flex-col overflow-hidden transition-transform duration-300 hover:scale-105">
                                 <div className="h-[250px] md:h-[230px] overflow-hidden">
-                                    <Image
-                                        src={item.image}
-                                        alt="service icon"
-                                        width={400}
-                                        height={400}
-                                        className="w-full h-full object-cover"
-                                    />
+                                    {item.image && (
+                                        <Image
+                                            src={item.image}
+                                            alt={item.title || "service icon"}
+                                            width={400}
+                                            height={400}
+                                            className="w-full h-full object-cover"
+                                        />
+                                    )}
+
                                 </div>
                                 <div className="p-4 text-center flex-grow">
                                     <h2 className="text-2xl font-bold text-black" style={{ fontFamily: "Roboto Slab, serif" }}>{item.title}</h2>
                                 </div>
                                 <div className="px-4 text-center flex-grow">
                                     <h2 className="text-md text-black line-clamp-2">
-                                        {item.content ? (
-                                            <span dangerouslySetInnerHTML={{ __html: item.content }} />
-                                        ) : (
-                                            "Loading..."
+                                        {item.content && (
+                                            <span className="text-md text-black line-clamp-2">
+                                                <span dangerouslySetInnerHTML={{ __html: item.content }} />
+                                            </span>
                                         )}
+
                                     </h2>
                                 </div>
 

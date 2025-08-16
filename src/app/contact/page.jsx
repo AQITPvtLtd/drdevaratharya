@@ -2,9 +2,9 @@ import React from 'react'
 import Contact from './Contact'
 
 export const metadata = {
-  meta_title: "Book Appointment with Dr. Devavrat Arya | Medical Oncologist in New Delhi",
-  meta_desc: "Schedule your appointment with Dr. Devavrat Arya, expert medical oncologist in New Delhi at Arya Oncology. Get personalized cancer care and treatment.",
-  keyword: [
+  title: "Book Appointment with Dr. Devavrat Arya | Medical Oncologist in New Delhi",
+  description: "Schedule your appointment with Dr. Devavrat Arya, expert medical oncologist in New Delhi at Arya Oncology. Get personalized cancer care and treatment.",
+  keywords: [
     "medical oncologist appointment lajpat nagar",
     "oncology consultation south delhi",
     "cancer care appointment saket",

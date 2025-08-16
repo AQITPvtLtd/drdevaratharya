@@ -6,9 +6,9 @@ import OncologyServices from "@/components/homepage/OncologyServices";
 import Faq from "./about/Faq";
 
 export const metadata = {
-  meta_title: "Dr. Devavrat Arya | Medical Oncologist in New Delhi | Arya Oncology",
-  meta_desc: "Consult Dr. Devavrat Arya, a leading medical oncologist in New Delhi at Arya Oncology, offering personalized cancer treatment and compassionate care.",
-  keyword: [
+  title: "Dr. Devavrat Arya | Medical Oncologist in New Delhi | Arya Oncology",
+  description: "Consult Dr. Devavrat Arya, a leading medical oncologist in New Delhi at Arya Oncology, offering personalized cancer treatment and compassionate care.",
+  keywords: [
     "medical oncologist new delhi",
     "medical oncologist lajpat nagar",
     "medical oncologist south delhi",
@@ -20,8 +20,8 @@ export const metadata = {
     "tumor specialist south delhi",
     "Arya Oncology delhi"
   ]
-
 };
+
 
 export default function Home() {
   return (
