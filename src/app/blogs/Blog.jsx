@@ -1,13 +1,28 @@
-// app/blogs/page.jsx
+"use client";
+import React, { useEffect, useState } from "react";
+import { getBlog } from "@/services/getBlog";
 import Image from "next/image";
 import Link from "next/link";
-import { SlCalender } from "react-icons/sl";
 import moment from "moment";
-import { getBlog } from "@/services/getBlog";
+import { SlCalender } from "react-icons/sl";
+const Blog = () => {
+  const [blog, setBlog] = useState([]);
 
-export default async function Blog() {
-  const result = await getBlog();
-  const blog = result?.result || [];
+  useEffect(() => {
+    async function getResult() {
+      try {
+        const result = await getBlog();
+        if (result && result.result) {
+          setBlog(result.result);
+        } else {
+          console.error("Invalid API response:", result);
+        }
+      } catch (error) {
+        console.error("Error fetching blogs:", error.message);
+      }
+    }
+    getResult();
+  }, []);
 
   return (
     <div className="lg:p-10 overflow-x-clip px-4">
@@ -39,10 +54,12 @@ export default async function Blog() {
                   <span>{b.date ? moment(b.date).format("MMMM DD, YYYY") : "Unknown Date"}</span>
                 </div>
                 <p className="text-gray-700 line-clamp-3">{b.short_desc}</p>
-                <button className="px-3 py-1.5 mt-3 cursor-pointer bg-[#ef1a76] text-white text-lg rounded-lg block text-center transition-all 
+                <Link href={`/blogs/${b.id}/${b.url}`}>
+                  <button className="px-3 py-1.5 mt-3 cursor-pointer bg-[#ef1a76] text-white text-lg rounded-lg block text-center transition-all 
                                            border-2 border-transparent hover:border-[#ef1a76] hover:text-black hover:bg-white">
-                  Read More
-                </button>
+                    Read More
+                  </button>
+                </Link>
               </div>
             </Link>
           ))}
@@ -50,4 +67,6 @@ export default async function Blog() {
       )}
     </div>
   );
-}
+};
+
+export default Blog;
