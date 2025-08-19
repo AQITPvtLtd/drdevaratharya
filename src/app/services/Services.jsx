@@ -40,7 +40,7 @@ const Services = () => {
 
       {/* Parent container with stagger animation */}
       <motion.div
-        className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 px-5"
+        className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 px-5 md:pr-[55px] pr-5"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"

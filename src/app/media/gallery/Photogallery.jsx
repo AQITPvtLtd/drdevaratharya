@@ -34,7 +34,7 @@ const Photogallery = () => {
         Our Photos
       </p>
 
-      <div className='mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'>
+      <div className='mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:pr-[55px] pr-5'>
         {galleryData.map((photo, index) => (
           <motion.div
             key={photo.id}
