@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { FaTimes, FaBars } from "react-icons/fa";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function SocialLinks() {
@@ -92,9 +93,9 @@ export default function SocialLinks() {
         <button
           onClick={() => setIsOpen(true)}
           className="fixed top-1/2 right-0 transform -translate-y-1/2 
-            bg-[#84848c] text-white p-3 rounded-l-xl shadow-lg z-50 lg:hidden"
+            bg-[#84848c] p-1 rounded-l-xl shadow-lg z-50 lg:hidden"
         >
-          <FaBars />
+        <Image src="/sidebar/toggel.png" width={48} height={48} alt="" />
         </button>
       )}
     </>
